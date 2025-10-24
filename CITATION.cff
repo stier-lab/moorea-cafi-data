@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Mo'orea Coral Reef CAFI (Cryptic Associated Fauna and Invertebrates) Experiments: Size and Amount Manipulations 2019-2021"
+authors:
+  - family-names: Stier
+    given-names: Adrian C.
+    email: astier@ucsb.edu
+    affiliation: "University of California, Santa Barbara"
+    orcid: "https://orcid.org/0000-0002-5075-5759"
+  - family-names: Osenberg
+    given-names: Craig W.
+    email: osenberg@uga.edu
+    affiliation: "University of Georgia"
+    orcid: "https://orcid.org/0000-0002-9519-9525"
+version: 2.0.0
+date-released: 2025-10-24
+keywords:
+  - coral reefs
+  - cryptic invertebrates
+  - CAFI
+  - biodiversity
+  - experimental ecology
+  - Mo'orea
+  - French Polynesia
+  - Pocillopora
+  - coral growth
+  - symbiosis
+  - marine ecology
+  - LTER
+license: CC-BY-4.0
+repository-code: "https://github.com/OWNER/REPO"
+abstract: |
+  This dataset contains comprehensive data from three interconnected field experiments
+  examining how cryptic associated fauna and invertebrates (CAFI) affect coral reef
+  ecosystems in Mo'orea, French Polynesia. The research includes: (1) Maatea Size
+  Experiment - testing how coral size affects CAFI communities (60 corals, 2019-2021),
+  (2) MRB Amount Experiment - manipulating CAFI abundance to measure effects on coral
+  growth (54 corals, 2019-2021), and (3) Mo'orea Survey - characterizing natural
+  variation in CAFI communities across four reef sites (114 corals, 2019). Data includes
+  detailed taxonomic identification of 17,073 invertebrates, coral physiology
+  measurements (protein, carbohydrates, zooxanthellae), 3D photogrammetry of coral
+  growth, and fish community surveys. All files follow FAIR data principles with
+  comprehensive metadata and are formatted for submission to NSF OCE and LTER/EDI
+  data repositories.
+contact:
+  - family-names: Stier
+    given-names: Adrian C.
+    email: astier@ucsb.edu
+preferred-citation:
+  type: dataset
+  authors:
+    - family-names: Stier
+      given-names: Adrian C.
+    - family-names: Osenberg
+      given-names: Craig W.
+  title: "Mo'orea Coral Reef CAFI (Cryptic Associated Fauna and Invertebrates) Experiments: Size and Amount Manipulations 2019-2021"
+  year: 2025
+  publisher: "GitHub"
+  url: "https://github.com/OWNER/REPO"
+  license: CC-BY-4.0
