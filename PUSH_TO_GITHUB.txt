@@ -1,0 +1,240 @@
+================================================================================
+PUSH TO GITHUB - QUICK REFERENCE CARD
+================================================================================
+
+Repository: Mo'orea Coral CAFI Data 2019-2021
+Status: ✅ READY TO PUSH
+Date: 2025-10-24
+Local Path: /Users/adrianstiermbp2023/Desktop/Moorea_Coral_CAFI_Data/
+
+================================================================================
+STEP 1: CREATE GITHUB REPOSITORY
+================================================================================
+
+1. Go to: https://github.com/new
+
+2. Fill in:
+   Repository name: moorea-cafi-data
+   Description: Mo'orea Coral Reef CAFI Experiments Data 2019-2021
+   Visibility: ✅ PUBLIC (required for NSF OCE compliance)
+
+   ⚠️ IMPORTANT: DO NOT CHECK:
+   - [ ] Add a README file
+   - [ ] Add .gitignore
+   - [ ] Choose a license
+   (We already have all of these!)
+
+3. Click "Create repository"
+
+================================================================================
+STEP 2: PUSH LOCAL REPOSITORY TO GITHUB
+================================================================================
+
+After creating the repository, GitHub will show you commands.
+Copy your repository URL and run these in Terminal:
+
+cd "/Users/adrianstiermbp2023/Desktop/Moorea_Coral_CAFI_Data"
+
+# Replace USERNAME with your GitHub username
+# Replace REPO with your repository name (e.g., moorea-cafi-data)
+git remote add origin https://github.com/USERNAME/REPO.git
+
+git branch -M main
+git push -u origin main
+
+EXAMPLE (replace with your actual values):
+-----------------------------------------
+git remote add origin https://github.com/adrianstier/moorea-cafi-data.git
+git push -u origin main
+
+================================================================================
+STEP 3: UPDATE CITATION FILE WITH GITHUB URL
+================================================================================
+
+After successful push, edit CITATION.cff (line 22):
+
+Change this:
+  repository-code: "https://github.com/OWNER/REPO"
+
+To this (with your actual URL):
+  repository-code: "https://github.com/adrianstier/moorea-cafi-data"
+
+Then commit and push:
+git add CITATION.cff
+git commit -m "Update CITATION.cff with GitHub repository URL"
+git push
+
+================================================================================
+STEP 4: CONFIGURE GITHUB REPOSITORY SETTINGS
+================================================================================
+
+1. Go to your repository on GitHub
+
+2. Click "Settings" tab
+
+3. Features → Enable:
+   ✅ Issues (for bug reports and questions)
+   ✅ Discussions (optional, for Q&A)
+
+4. About section (right side of main page) → Add:
+   Description: Mo'orea Coral Reef CAFI Experiments Data 2019-2021
+   Website: (leave blank or add your lab site)
+   Topics: coral-reefs, marine-ecology, open-data, oceanography,
+           french-polynesia, nsf, lter
+
+5. Verify "Cite this repository" button appears (uses CITATION.cff)
+
+================================================================================
+STEP 5: CREATE RELEASE (RECOMMENDED)
+================================================================================
+
+1. Go to repository → Releases → "Create a new release"
+
+2. Fill in:
+   Tag: v2.0.0
+   Title: Mo'orea CAFI Data v2.0 - NSF OCE Compliant Release
+   Description:
+
+   Initial public release of Mo'orea coral reef CAFI experiments data.
+
+   This dataset contains:
+   - 23 data files with 17,073 invertebrate records
+   - Coral physiology and growth measurements
+   - Fish community surveys
+   - Complete documentation and metadata
+   - FAIR principles applied throughout
+   - NSF OCE 24-124 compliant
+   - Ready for LTER/EDI submission
+
+   Data preservation strategy:
+   - All original field data preserved in original columns
+   - Numeric versions added as separate columns for analysis
+   - No data loss or modifications
+
+   Authors: Adrian C. Stier (UCSB) and Craig W. Osenberg (UGA)
+   License: CC-BY-4.0
+
+3. Click "Publish release"
+
+================================================================================
+STEP 6: GET PERMANENT DOI (OPTIONAL BUT RECOMMENDED)
+================================================================================
+
+1. Go to: https://zenodo.org/ (create account if needed)
+
+2. Link GitHub account:
+   Account Settings → GitHub → Authorize Zenodo
+
+3. Enable repository:
+   Find "moorea-cafi-data" → Toggle ON
+
+4. Create new release on GitHub (if not done in Step 5)
+   Zenodo will automatically archive and assign DOI
+
+5. Once DOI issued:
+   - Update CITATION.cff with DOI
+   - Update README.md with DOI badge
+   - Include DOI in all publications
+
+================================================================================
+REPOSITORY STATISTICS
+================================================================================
+
+Total Files: 42
+├── Data files: 23 (CSV: 19, Excel: 4)
+├── Metadata: 12 (Excel: 8, Word: 4)
+└── Documentation: 7 (Markdown: 6, Text: 1)
+
+Repository Size: ~6.4 MB
+Total Lines: 26,339
+
+Git Status:
+├── Branch: main
+├── Commits: 1
+├── Commit hash: 6f6d0f5
+└── Clean working tree: ✓
+
+================================================================================
+WHAT'S INCLUDED
+================================================================================
+
+Documentation:
+✅ README.md - Comprehensive overview with quick start
+✅ GETTING_STARTED.md - Step-by-step tutorial
+✅ DATA_DICTIONARY.md - Complete column descriptions
+✅ CONTRIBUTING.md - How to report issues and cite
+✅ CITATION.cff - Machine-readable citation
+✅ LICENSE - CC-BY-4.0 full text
+✅ .gitignore - Proper Git configuration
+
+Data Quality:
+✅ All original data preserved (zero modifications)
+✅ Non-numeric codes retained (<5, L, M, S)
+✅ Numeric columns added for analysis
+✅ UTF-8 encoding standardized
+✅ 17,073 records across 3 experiments
+
+Compliance:
+✅ NSF OCE 24-124 compliant (2-year public release)
+✅ FAIR data principles applied
+✅ LTER/EDI ready format
+✅ Open science best practices
+
+================================================================================
+NEXT STEPS AFTER GITHUB PUSH
+================================================================================
+
+For NSF OCE Compliance:
+1. Copy GitHub URL
+2. Include in grant reports and publications
+3. Meets 2-year public release requirement
+
+For LTER/EDI Submission:
+1. Contact MCR LTER Data Manager
+2. Provide GitHub repository URL
+3. Data manager will review and upload to EDI portal
+4. You'll receive EDI dataset ID (knb-lter-mcr.xxxx.1)
+
+For Publications:
+1. Include dataset DOI in manuscripts
+2. Follow citation format in CITATION.cff
+3. Add data availability statement
+4. Update ORCID profile with data publication
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Problem: "Permission denied (publickey)"
+Solution: Set up SSH keys or use HTTPS with personal access token
+         https://docs.github.com/en/authentication
+
+Problem: "Repository already exists"
+Solution: Use different repository name or delete existing one
+
+Problem: "Large files rejected"
+Solution: All files are <3MB, should work fine. If issues, use Git LFS.
+
+Problem: "Updates were rejected"
+Solution: Make sure you didn't initialize with README on GitHub
+
+================================================================================
+CONTACT INFORMATION
+================================================================================
+
+Data Authors:
+Adrian C. Stier - astier@ucsb.edu (UC Santa Barbara)
+Craig W. Osenberg - osenberg@uga.edu (University of Georgia)
+
+Technical Questions:
+Open GitHub Issue after pushing
+
+LTER/EDI Questions:
+MCR LTER Data Manager - https://mcr.lternet.edu
+
+================================================================================
+
+Last Updated: 2025-10-24
+Ready to Push: YES ✓
+
+================================================================================
