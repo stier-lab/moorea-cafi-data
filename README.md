@@ -1,10 +1,10 @@
 # Mo'orea Coral Reef CAFI Field Experiments (2019-2021)
 
-**Cryptic And Fishable Invertebrate (CAFI) Communities in Coral Reef Ecosystems**
+**Cryptic Associated Fauna and Invertebrates (CAFI) Communities in Coral Reef Ecosystems**
 
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Data Quality](https://img.shields.io/badge/data-original%20preserved-blue)
-![Files](https://img.shields.io/badge/files-23-orange)
+![Files](https://img.shields.io/badge/files-25-orange)
 
 ---
 
@@ -15,8 +15,8 @@ This repository contains **complete, publication-ready data** from field experim
 ### Key Features:
 - ✅ **Original data 100% preserved** - All data as collected in the field
 - ✅ **Numeric columns added** - For statistical analysis (see below)
-- ✅ **23 data files** - Covering 3 experiments and 1 survey
-- ✅ **Complete metadata** - 12 README files with detailed methods
+- ✅ **25 data files** - Covering 3 experiments and 1 survey
+- ✅ **Complete metadata** - 13 README files with detailed methods
 - ✅ **FAIR principles** - Findable, Accessible, Interoperable, Reusable
 
 ### Principal Investigators:
@@ -35,7 +35,7 @@ Moorea_Coral_CAFI_Data/
 ├── README.md                          # This file - START HERE
 ├── DATA_DICTIONARY.md                 # Column descriptions for all files
 ├── GETTING_STARTED.md                 # Quick start guide
-├── data/                              # 23 data files (CSV + Excel)
+├── data/                              # 25 data files (CSV + Excel)
 │   ├── maatea_size_*.csv             # Maatea Size experiment (9 files)
 │   ├── moorea_survey_*.csv           # Mo'orea Survey (3 files)
 │   └── mrb_amount_*.csv              # MRB Amount experiment (11 files)
@@ -220,7 +220,7 @@ Row 4:  cafi_size_mm = "12.3"    cafi_size_mm_numeric = 12.3
 
 ## 📐 Measurement Methods
 
-### CAFI (Cryptic And Fishable Invertebrates):
+### CAFI (Cryptic Associated Fauna and Invertebrates):
 - **Collection:** Coral colonies wrapped in mesh bags, transported to lab
 - **Extraction:** 90-second freshwater immersion to expel invertebrates
 - **Identification:** Sorted, measured, identified to lowest taxonomic level
@@ -392,10 +392,11 @@ Under these terms:
 
 ## 🔄 Version History
 
-- **v1.0** (2025) - Initial public release
-  - 23 data files from 3 experiments + 1 survey
+- **v2.0** (2025) - NSF OCE and LTER/EDI compliant release
+  - 25 data files from 3 experiments + 1 survey (added 2 tip/stump comparison files)
   - Complete metadata and documentation
   - All original data preserved with numeric columns added
+  - Comprehensive data verification and quality control completed
 
 ---
 

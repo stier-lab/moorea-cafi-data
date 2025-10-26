@@ -14,7 +14,7 @@
 - 42 files staged and committed
 - Total: 26,339 lines of data and documentation
 
-### ✅ Data Files (23 files)
+### ✅ Data Files (25 files)
 All data files processed with **data preservation strategy**:
 - Original columns preserved exactly as recorded in field
 - New `_numeric` columns added for statistical analysis
@@ -53,7 +53,7 @@ All original field metadata preserved:
    - Links research questions to specific files
 
 3. **DATA_DICTIONARY.md** (256 lines)
-   - Complete column descriptions for all 23 files
+   - Complete column descriptions for all 25 files
    - Organized by file type
    - Data type legends
    - Special value codes explained
@@ -83,10 +83,10 @@ All original field metadata preserved:
 ## Repository Statistics
 
 ```
-Total Files: 42
-├── Data files: 23 (CSV: 19, Excel: 4)
-├── Metadata: 12 (Excel: 8, Word: 4)
-└── Documentation: 7 (Markdown: 6, Text: 1)
+Total Files: 44
+├── Data files: 25 (CSV: 19, Excel: 6)
+├── Metadata: 13 (Excel: 9, Word: 4)
+└── Documentation: 6 (Markdown: 5, Text: 1)
 
 Lines of Code/Data: 26,339
 Repository Size: ~15 MB (estimated)
