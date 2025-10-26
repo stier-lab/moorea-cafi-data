@@ -142,8 +142,8 @@
         }
 
         header {
-            padding: 140px 40px 100px;
-            margin-bottom: 80px;
+            padding: 160px 40px 120px;
+            margin-bottom: 120px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -242,12 +242,12 @@
 
         h1 {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 4em;
+            font-size: 4.5em;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             color: #0f172a;
-            letter-spacing: -0.03em;
-            line-height: 1.1;
+            letter-spacing: -0.04em;
+            line-height: 1;
         }
 
         .subtitle {
@@ -280,53 +280,88 @@
 
         .nav-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-bottom: 80px;
         }
 
         .nav-card {
             background: #ffffff;
-            border-radius: 16px;
-            padding: 32px 28px;
-            text-align: center;
+            border-radius: 20px;
+            padding: 40px 32px;
+            text-align: left;
             cursor: pointer;
-            transition: all 0.2s ease;
-            border: 1px solid #e2e8f0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #f1f5f9;
             position: relative;
+            overflow: hidden;
+        }
+
+        .nav-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-card:hover::before {
+            transform: scaleX(1);
         }
 
         .nav-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.08);
-            border-color: #cbd5e1;
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border-color: #e2e8f0;
         }
 
         .nav-card .icon {
-            font-size: 2.5em;
-            margin-bottom: 16px;
-            transition: transform 0.2s ease;
-            filter: grayscale(0.2);
+            font-size: 3em;
+            margin-bottom: 20px;
+            display: block;
+            transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            opacity: 0.9;
         }
 
         .nav-card:hover .icon {
-            transform: scale(1.1);
-            filter: grayscale(0);
+            transform: scale(1.1) rotate(-5deg);
+            opacity: 1;
         }
 
         .nav-card h3 {
             font-family: 'Space Grotesk', sans-serif;
             color: #0f172a;
             margin-bottom: 8px;
-            font-size: 1.25em;
+            font-size: 1.375em;
             font-weight: 600;
-            letter-spacing: -0.01em;
+            letter-spacing: -0.02em;
         }
 
         .nav-card p {
             color: #64748b;
-            font-size: 0.875em;
-            line-height: 1.5;
+            font-size: 0.9375em;
+            line-height: 1.6;
+        }
+
+        /* Arrow indicator on cards */
+        .nav-card::after {
+            content: '→';
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            font-size: 1.5em;
+            color: #cbd5e1;
+            transition: all 0.3s ease;
+        }
+
+        .nav-card:hover::after {
+            color: #3b82f6;
+            transform: translateX(4px);
         }
 
         .content-section {
@@ -393,19 +428,38 @@
         }
 
         .stat-box {
-            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            background: linear-gradient(135deg, #fafbfc 0%, #f8fafc 100%);
             color: #0f172a;
-            padding: 32px 24px;
-            border-radius: 16px;
+            padding: 40px 32px;
+            border-radius: 20px;
             text-align: center;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s ease;
+            border: 1px solid #f1f5f9;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-box:hover::before {
+            transform: scaleX(1);
         }
 
         .stat-box:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.08);
-            border-color: #cbd5e1;
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border-color: #e2e8f0;
         }
 
         .stat-number {
@@ -789,51 +843,64 @@
 
         .photo-gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 35px;
-            margin: 40px 0;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 32px;
+            margin: 48px 0;
         }
 
         .photo-card {
             background: white;
-            border-radius: 16px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: all 0.2s ease;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
             position: relative;
-            border: 1px solid #e2e8f0;
+            border: 1px solid #f1f5f9;
         }
 
         .photo-card::after {
-            content: '→';
+            content: '';
             position: absolute;
-            top: 16px;
-            right: 16px;
-            background: rgba(255, 255, 255, 0.95);
-            width: 40px;
-            height: 40px;
+            top: 20px;
+            right: 20px;
+            width: 48px;
+            height: 48px;
+            background: rgba(59, 130, 246, 0.95);
+            backdrop-filter: blur(10px);
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2em;
-            font-weight: 600;
-            color: #0f172a;
             opacity: 0;
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: scale(0.8);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
             z-index: 10;
+        }
+
+        .photo-card::before {
+            content: '↗';
+            position: absolute;
+            top: 32px;
+            right: 32px;
+            font-size: 1.2em;
+            color: white;
+            z-index: 11;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
 
         .photo-card:hover::after {
             opacity: 1;
+            transform: scale(1);
+        }
+
+        .photo-card:hover::before {
+            opacity: 1;
         }
 
         .photo-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.12);
-            border-color: #cbd5e1;
+            transform: translateY(-8px);
+            box-shadow: 0 24px 48px rgba(0,0,0,0.12);
+            border-color: #e2e8f0;
         }
 
         .photo-card img {
@@ -1074,12 +1141,12 @@
     <nav class="top-nav" id="topNav">
         <div class="nav-container">
             <a href="#" class="nav-logo" onclick="showNav(); return false;">
-                🪸 Mo'orea CAFI
+                Mo'orea CAFI
             </a>
             <div class="nav-links">
-                <a href="#" class="nav-link home-button" onclick="showNav(); return false;">🏠 Home</a>
+                <a href="#" class="nav-link home-button" onclick="showNav(); return false;">Home</a>
                 <a href="#" class="nav-link" data-section="overview" onclick="showSection('overview'); return false;">Overview</a>
-                <a href="#" class="nav-link" data-section="gallery" onclick="showSection('gallery'); return false;">📸 Gallery</a>
+                <a href="#" class="nav-link" data-section="gallery" onclick="showSection('gallery'); return false;">Gallery</a>
                 <a href="#" class="nav-link" data-section="experiments" onclick="showSection('experiments'); return false;">Experiments</a>
                 <a href="#" class="nav-link" data-section="files" onclick="showSection('files'); return false;">Files</a>
                 <a href="#" class="nav-link" data-section="organisms" onclick="showSection('organisms'); return false;">Organisms</a>
@@ -1104,7 +1171,7 @@
     <div class="container">
         <!-- Header -->
         <header class="header-with-bg">
-            <h1>🪸 Mo'orea Coral CAFI Dataset</h1>
+            <h1>Mo'orea Coral CAFI Dataset</h1>
             <p class="subtitle">Cryptic Associated Fauna and Invertebrates in <em>Pocillopora</em> Coral Colonies</p>
             <div>
                 <span class="badge">17,073 Organisms</span>
@@ -1135,9 +1202,9 @@
             </div>
 
             <div class="nav-card" onclick="showSection('gallery')">
-                <div class="icon">📸</div>
-                <h3>Photo Gallery</h3>
-                <p>See the organisms and field work</p>
+                <div class="icon">📷</div>
+                <h3>Gallery</h3>
+                <p>Visual documentation of organisms and research</p>
             </div>
 
             <div class="nav-card" onclick="showSection('experiments')">
