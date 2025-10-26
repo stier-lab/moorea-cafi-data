@@ -61,6 +61,19 @@
             transition: all 0.3s ease;
         }
 
+        /* Progress bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: transform 0.1s ease;
+            z-index: 1001;
+        }
+
         .top-nav.hidden {
             transform: translateY(-100%);
         }
@@ -129,14 +142,14 @@
         }
 
         header {
-            padding: 120px 40px 80px;
+            padding: 140px 40px 100px;
             margin-bottom: 80px;
             text-align: center;
             position: relative;
             overflow: hidden;
         }
 
-        /* Clean hero with subtle gradient accent */
+        /* Hero with featured image */
         .header-with-bg {
             background: #ffffff;
             min-height: auto;
@@ -154,7 +167,7 @@
             transform: translateX(-50%);
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -163,6 +176,68 @@
         .header-with-bg .badge {
             position: relative;
             z-index: 1;
+        }
+
+        /* Hero featured image */
+        .hero-featured-image {
+            width: 100%;
+            max-width: 900px;
+            height: 400px;
+            border-radius: 16px;
+            object-fit: cover;
+            margin: 40px auto 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+            border: 1px solid #e2e8f0;
+        }
+
+        /* CTA Buttons */
+        .hero-cta {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .cta-primary {
+            background: #3b82f6;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-size: 0.9375em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cta-primary:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .cta-secondary {
+            background: white;
+            color: #475569;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-size: 0.9375em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border: 1px solid #e2e8f0;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cta-secondary:hover {
+            background: #f8fafc;
+            border-color: #cbd5e1;
+            transform: translateY(-2px);
         }
 
         h1 {
@@ -285,6 +360,19 @@
             font-weight: 700;
             margin-bottom: 32px;
             letter-spacing: -0.02em;
+            position: relative;
+            padding-bottom: 16px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+            border-radius: 2px;
         }
 
         h3 {
@@ -328,6 +416,18 @@
             margin-bottom: 8px;
             color: #0f172a;
             letter-spacing: -0.02em;
+        }
+
+        /* Animated counter */
+        .stat-number[data-count] {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.6s ease;
+        }
+
+        .stat-number.animated {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .stat-label {
@@ -967,6 +1067,9 @@
     </style>
 </head>
 <body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
     <!-- Fixed Navigation Bar -->
     <nav class="top-nav" id="topNav">
         <div class="nav-container">
@@ -1008,6 +1111,18 @@
                 <span class="badge">165 Species</span>
                 <span class="badge">228 Coral Colonies</span>
                 <span class="badge">45 Months</span>
+            </div>
+
+            <img src="images/moorea_panorama.jpg" alt="Mo'orea coral reef panorama" class="hero-featured-image">
+
+            <div class="hero-cta">
+                <a href="#" class="cta-primary" onclick="showSection('getstarted'); return false;">
+                    <span>Explore the Data</span>
+                    <span>→</span>
+                </a>
+                <a href="#" class="cta-secondary" onclick="showSection('overview'); return false;">
+                    <span>Learn More</span>
+                </a>
             </div>
         </header>
 
@@ -1241,19 +1356,19 @@
 
             <div class="stat-grid" style="margin-top: 40px;">
                 <div class="stat-box">
-                    <span class="stat-number">228</span>
+                    <span class="stat-number" data-count="228">0</span>
                     <span class="stat-label">Corals Processed</span>
                 </div>
                 <div class="stat-box">
-                    <span class="stat-number">17,073</span>
+                    <span class="stat-number" data-count="17073">0</span>
                     <span class="stat-label">Organisms Counted</span>
                 </div>
                 <div class="stat-box">
-                    <span class="stat-number">165</span>
+                    <span class="stat-number" data-count="165">0</span>
                     <span class="stat-label">Species Identified</span>
                 </div>
                 <div class="stat-box">
-                    <span class="stat-number">45</span>
+                    <span class="stat-number" data-count="45">0</span>
                     <span class="stat-label">Months Duration</span>
                 </div>
             </div>
@@ -1872,14 +1987,22 @@ cor.test(merged$total_cafi, merged$protein_mg_cm2)</code></pre>
             });
         }
 
-        // Show/hide scroll to top button
+        // Show/hide scroll to top button and update progress bar
         window.addEventListener('scroll', function() {
             const scrollToTopBtn = document.getElementById('scrollToTop');
+            const progressBar = document.getElementById('progressBar');
+
+            // Scroll to top button
             if (window.scrollY > 300) {
                 scrollToTopBtn.classList.add('visible');
             } else {
                 scrollToTopBtn.classList.remove('visible');
             }
+
+            // Progress bar
+            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (window.scrollY / windowHeight);
+            progressBar.style.transform = `scaleX(${scrolled})`;
         });
 
         // Lazy loading image fade-in effect
@@ -1932,6 +2055,40 @@ cor.test(merged$total_cafi, merged$protein_mg_cm2)</code></pre>
                     card.style.transition = 'all 0.6s ease';
                     cardObserver.observe(card);
                 });
+            });
+        }
+
+        // Animated counter for stats
+        function animateCounter(element, target, duration = 2000) {
+            const start = 0;
+            const increment = target / (duration / 16);
+            let current = start;
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current).toLocaleString();
+            }, 16);
+        }
+
+        // Observe stat numbers and animate when visible
+        if ('IntersectionObserver' in window) {
+            const statObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                        entry.target.classList.add('animated');
+                        const target = parseInt(entry.target.getAttribute('data-count'));
+                        animateCounter(entry.target, target);
+                        statObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            document.querySelectorAll('.stat-number[data-count]').forEach(stat => {
+                statObserver.observe(stat);
             });
         }
     </script>
