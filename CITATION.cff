@@ -29,7 +29,7 @@ keywords:
   - marine ecology
   - LTER
 license: CC-BY-4.0
-repository-code: "https://github.com/OWNER/REPO"
+repository-code: "https://github.com/stier-lab/moorea-cafi-data"
 abstract: |
   This dataset contains comprehensive data from three interconnected field experiments
   examining how cryptic associated fauna and invertebrates (CAFI) affect coral reef
@@ -57,5 +57,5 @@ preferred-citation:
   title: "Mo'orea Coral Reef CAFI (Cryptic Associated Fauna and Invertebrates) Experiments: Size and Amount Manipulations 2019-2021"
   year: 2025
   publisher: "GitHub"
-  url: "https://github.com/OWNER/REPO"
+  url: "https://github.com/stier-lab/moorea-cafi-data"
   license: CC-BY-4.0

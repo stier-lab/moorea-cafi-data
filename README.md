@@ -350,7 +350,7 @@ If you use this data, please cite:
 ```
 Stier, A.C. and Osenberg, C.W. (2025). Mo'orea Coral Reef CAFI Field
 Experiments Data Package (2019-2021). Dataset.
-https://github.com/[your-username]/Moorea_Coral_CAFI_Data
+https://github.com/stier-lab/moorea-cafi-data
 ```
 
 ---
