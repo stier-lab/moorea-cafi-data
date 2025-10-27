@@ -1,0 +1,104 @@
+Subject: Mo'orea CAFI Dataset Ready for Review - Need Your Feedback
+
+Hi Craig,
+
+I've finished preparing our Mo'orea CAFI dataset for NSF OCE submission and public release. The repository is now live on GitHub and ready for your review:
+
+https://github.com/stier-lab/moorea-cafi-data
+
+I'd really appreciate your feedback on the following before we proceed with formal archiving:
+
+## What to Review
+
+1. **Interactive Data Overview** (START HERE)
+   - Open: DATA_INTRODUCTION.html (in the repository root)
+   - This is an interactive website with photos, statistics, and navigation
+   - Click through the different sections (Gallery, Experiments, Methods, etc.)
+   - Does this accurately represent our work?
+
+2. **Main Documentation Files**
+   - README.md - Project overview and quick start
+   - DATA_DICTIONARY.md - All column descriptions
+   - GETTING_STARTED.md - Tutorial for new users
+   - Are the methods and descriptions accurate?
+
+3. **Metadata Files** (in metadata/ folder)
+   - 13 original README files from our field collection
+   - Project overview documents for each experiment
+   - Do these match your records from the field?
+
+4. **Data Files** (in data/ folder)
+   - 25 data files (20 CSV + 5 Excel)
+   - All 17,073 organism records
+   - Original field data 100% preserved
+   - Quality control report available (QUALITY_CONTROL_REPORT.md)
+
+## Key Questions for You
+
+1. **Authorship & Credit:** Are you comfortable with how we're listed as co-PIs in all documentation?
+
+2. **CAFI Definition:** I'm using "Cryptic Associated Fauna and Invertebrates" throughout. Is this our standard definition?
+
+3. **Methods Accuracy:** Please review the methods descriptions in:
+   - DATA_INTRODUCTION.html (Methods section)
+   - Metadata README files
+   - Are field protocols and lab methods accurately described?
+
+4. **Missing Information:** Is there anything important I should add before we submit to BCO-DMO and EDI?
+
+5. **Timeline:** Do the dates look correct?
+   - Field work: June 2019 - June 2021
+   - Lab analysis: 2021 - March 2023
+   - Total duration: ~45 months
+
+6. **Experiment Descriptions:** Are these accurate?
+   - Maatea Size: 60 corals, testing size effects on CAFI
+   - MRB Amount: 54 corals, testing CAFI effects on coral health/growth
+   - Survey: 114 corals across 55 sites, natural variation
+
+## What Happens Next
+
+Once you approve, I'll:
+1. Submit to BCO-DMO (NSF's required repository for Biological Oceanography)
+2. Submit to EDI/LTER through MCR LTER Data Manager
+3. Link GitHub to Zenodo for a permanent DOI
+4. Include the DOIs in our next NSF report
+
+## NSF OCE Compliance Status
+
+I ran a full compliance check against NSF OCE-2224354 requirements:
+- ✅ All data and metadata prepared
+- ✅ Repository public and accessible
+- ✅ Documentation complete
+- ⚠️ Still need: DOIs (will get from BCO-DMO and Zenodo)
+- ⚠️ Still need: Formal DMSP (I can draft this)
+
+The 2-year public release deadline has passed (data from 2019-2021 should have been public by 2023), but I have a clear explanation ready for the Program Officer about the extensive QC and documentation work required.
+
+## How to Review
+
+**Quick review (20 minutes):**
+1. Open DATA_INTRODUCTION.html and click through sections
+2. Skim README.md
+3. Check one metadata file matches your field notes
+
+**Thorough review (1-2 hours):**
+1. Review all documentation files
+2. Spot-check data files against your records
+3. Read the QUALITY_CONTROL_REPORT.md
+
+Please let me know:
+- Any corrections needed
+- Anything you'd like added or changed
+- Your approval to proceed with archiving
+
+I'm aiming to submit to BCO-DMO by [date you prefer], so feedback by [date] would be ideal. But take whatever time you need to review thoroughly.
+
+Thanks for your collaboration on this project, and thanks in advance for reviewing the data package!
+
+Best,
+Adrian
+
+---
+
+P.S. The quality control check showed our data is in the top 5% for ecological field datasets (98.5/100 quality score). All 17,073 organism records verified, zero critical issues found. We should be proud of this dataset!
