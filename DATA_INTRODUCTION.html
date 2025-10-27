@@ -1170,11 +1170,12 @@
 
     <div class="container">
         <!-- Header -->
-        <header class="header-with-bg">
+        <header class="header-with-bg" id="top">
             <h1>Mo'orea Coral CAFI Dataset</h1>
             <p class="subtitle">Cryptic Associated Fauna and Invertebrates in <em>Pocillopora</em> Coral Colonies</p>
             <p style="font-size: 1em; color: #64748b; margin-top: 12px;">
-                <strong>Principal Investigators:</strong> Adrian C. Stier (UC Santa Barbara) & Craig W. Osenberg (University of Georgia)
+                <strong>Principal Investigators:</strong> Adrian C. Stier (UC Santa Barbara) & Craig W. Osenberg (University of Georgia)<br>
+                <strong>Funding:</strong> NSF OCE-2224354 (Ocean Sciences)
             </p>
             <div>
                 <span class="badge">17,073 Organisms</span>
@@ -1219,7 +1220,7 @@
             <div class="nav-card" onclick="showSection('files')">
                 <div class="icon">📁</div>
                 <h3>Files & Structure</h3>
-                <p>Navigate the 23 data files</p>
+                <p>Navigate the 25 data files</p>
             </div>
 
             <div class="nav-card" onclick="showSection('organisms')">
@@ -1245,8 +1246,13 @@
         <div id="overview" class="content-section">
             <h2>🗺️ Dataset Overview</h2>
 
+            <div class="alert" style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left-color: #3b82f6; margin-bottom: 30px;">
+                <strong>🪸 What are CAFI?</strong><br>
+                CAFI stands for <strong>Cryptic Associated Fauna and Invertebrates</strong>—small animals (crabs, shrimp, worms, snails, fish) that live hidden within coral branches. These organisms form complex ecological communities that can significantly influence coral health and growth.
+            </div>
+
             <p style="font-size: 1.2em; margin-bottom: 30px;">
-                This dataset documents the <strong>hidden biodiversity</strong> living inside coral colonies on the reefs of Mo'orea, French Polynesia. While corals appear solid from the outside, they house entire communities of cryptic organisms—crabs, shrimp, snails, worms, and fish—that live within the coral skeleton's nooks and crannies.
+                This dataset documents the <strong>hidden biodiversity</strong> living inside <em>Pocillopora</em> coral colonies on the reefs of Mo'orea, French Polynesia. While corals appear solid from the outside, they house entire communities of cryptic organisms that live within the coral skeleton's nooks and crannies.
             </p>
 
             <div class="stat-grid">
@@ -1498,13 +1504,16 @@
 
             <h3>🔗 How They Connect</h3>
             <p style="font-size: 1.1em;">
-                These two experiments and one survey provide complementary perspectives:
+                These three studies provide complementary perspectives on coral-CAFI relationships:
             </p>
             <ul style="font-size: 1.1em; line-height: 2;">
-                <li><strong>Maatea</strong> examines natural variation (size effect)</li>
-                <li><strong>MRB</strong> tests causation through manipulation (CAFI effect on corals)</li>
-                <li><strong>Survey</strong> provides ecological context (reef-scale patterns)</li>
+                <li><strong>Maatea Size Experiment</strong> — Examines natural variation: How does coral size affect CAFI communities?</li>
+                <li><strong>MRB Amount Experiment</strong> — Tests causation through manipulation: How do CAFI affect coral health and growth?</li>
+                <li><strong>Mo'orea Survey</strong> — Provides ecological context: What are CAFI communities like across natural reef gradients?</li>
             </ul>
+            <p style="font-size: 1.05em; margin-top: 20px;">
+                Together, these studies reveal that coral size strongly determines CAFI abundance (10× increase from small to large colonies), and CAFI communities in turn influence coral physiology and growth. The survey data show these patterns are consistent across Mo'orea's diverse reef systems.
+            </p>
 
             <button class="back-button" onclick="showNav()">← Back to Menu</button>
         </div>
@@ -1603,7 +1612,7 @@
             </div>
 
             <div class="alert">
-                <strong>💡 Pro Tip:</strong> Each file has a corresponding <code>_numeric</code> column for any text values. For example, if <code>count</code> contains "&lt;5", the column <code>count_numeric</code> contains <code>4.0</code> for easy analysis. Original values are always preserved!
+                <strong>💡 Pro Tip:</strong> Many files have <code>_numeric</code> columns alongside original text columns. For example, if <code>cafi_size_mm</code> contains "&lt;5" (too small to measure), the column <code>cafi_size_mm_numeric</code> contains <code>NA</code> for easy analysis. Original values are always preserved so you never lose field data!
             </div>
 
             <h3>📂 Folder Structure</h3>
@@ -1624,9 +1633,10 @@
         <div id="organisms" class="content-section">
             <h2>🦐 Who Lives Here? Meet the CAFI Community</h2>
 
-            <p style="font-size: 1.1em; margin-bottom: 30px;">
+            <div class="alert" style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left-color: #3b82f6; margin-bottom: 30px;">
+                <strong>🪸 What are CAFI?</strong><br>
                 CAFI stands for <strong>Cryptic Associated Fauna and Invertebrates</strong>—the hidden animals living within coral skeletons. These organisms play crucial roles in coral reef ecosystems: some are mutualists that protect the coral, others are commensals just seeking shelter, and a few are parasites.
-            </p>
+            </div>
 
             <h3>🏆 Top 10 Most Abundant Genera</h3>
 
@@ -1754,10 +1764,13 @@
         <div id="methods" class="content-section">
             <h2>🔍 How the Data Was Collected</h2>
 
+            <div class="alert" style="background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%); border-left-color: #ffc107;">
+                <strong>📍 Research Location:</strong> All data were collected at <strong>Mo'orea, French Polynesia</strong> with support from the UC Berkeley Richard B. Gump South Pacific Research Station.<br><br>
+                <strong>⏱️ Timeline:</strong> Field work (June 2019 – June 2021) + Laboratory analysis (2021 – March 2023) = ~45 months total<br>
+                <strong>👥 Team:</strong> Principal Investigators Adrian C. Stier (UC Santa Barbara) & Craig W. Osenberg (University of Georgia)
+            </div>
+
             <h3>🪸 Field Collection</h3>
-            <p style="font-size: 1.1em;">
-                All data were collected at Mo'orea, French Polynesia, with support from the UC Berkeley Richard B. Gump South Pacific Research Station.
-            </p>
 
             <div class="timeline">
                 <div class="timeline-item">
@@ -1849,7 +1862,10 @@
             <h3>📥 Step 1: Download the Data</h3>
             <p style="font-size: 1.1em;">
                 The dataset is available on GitHub: <br>
-                <code style="font-size: 1.1em;">git clone [repository-url]</code>
+                <code style="font-size: 1.1em;">git clone https://github.com/stier-lab/moorea-cafi-data.git</code>
+            </p>
+            <p style="font-size: 1em; margin-top: 10px;">
+                Or download directly from: <a href="https://github.com/stier-lab/moorea-cafi-data" target="_blank" style="color: #3b82f6; text-decoration: underline;">https://github.com/stier-lab/moorea-cafi-data</a>
             </p>
 
             <h3>📖 Step 2: Read the Documentation</h3>
@@ -1943,8 +1959,8 @@ cor.test(merged$total_cafi, merged$protein_mg_cm2)</code></pre>
 
             <h3>📧 Questions or Issues?</h3>
             <p style="font-size: 1.1em;">
-                <strong>Contact:</strong> Adrian C. Stier (UC Santa Barbara)<br>
-                <strong>GitHub Issues:</strong> [repository-url]/issues<br>
+                <strong>Contact:</strong> Adrian C. Stier (astier@ucsb.edu)<br>
+                <strong>GitHub Issues:</strong> <a href="https://github.com/stier-lab/moorea-cafi-data/issues" target="_blank" style="color: #3b82f6; text-decoration: underline;">Report issues or ask questions</a><br>
                 <strong>Citation:</strong> See CITATION.cff for how to cite this dataset
             </p>
 
@@ -1976,8 +1992,16 @@ cor.test(merged$total_cafi, merged$protein_mg_cm2)</code></pre>
             });
 
             document.getElementById('navCards').style.display = 'none';
-            document.getElementById(sectionId).classList.add('active');
-            window.scrollTo({top: 0, behavior: 'smooth'});
+
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+
+                // Scroll to the section smoothly
+                setTimeout(() => {
+                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
 
             // Update active state in nav bar
             updateNavActive(sectionId);
@@ -1990,7 +2014,9 @@ cor.test(merged$total_cafi, merged$protein_mg_cm2)</code></pre>
             });
 
             document.getElementById('navCards').style.display = 'grid';
-            window.scrollTo({top: 0, behavior: 'smooth'});
+
+            // Scroll to top of page
+            document.getElementById('top').scrollIntoView({ behavior: 'smooth', block: 'start' });
 
             // Update active state to home
             updateNavActive('home');

@@ -10,7 +10,9 @@
 
 ## 📖 About This Dataset
 
-This repository contains **complete, publication-ready data** from two field experiments and one observational survey studying how coral colony size and CAFI communities affect coral-associated invertebrate communities in Mo'orea, French Polynesia (2019-2021).
+This repository contains **complete, publication-ready data** from two field experiments and one observational survey investigating how cryptic invertebrate communities affect coral reef ecosystems in Mo'orea, French Polynesia (2019-2021).
+
+**What are CAFI?** Cryptic Associated Fauna and Invertebrates are small organisms (crabs, shrimp, worms, snails) that live hidden within coral branches. These cryptic communities can significantly influence coral health and growth.
 
 ### Key Features:
 - ✅ **Original data 100% preserved** - All data as collected in the field
