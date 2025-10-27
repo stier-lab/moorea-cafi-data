@@ -1175,7 +1175,8 @@
             <p class="subtitle">Cryptic Associated Fauna and Invertebrates in <em>Pocillopora</em> Coral Colonies</p>
             <p style="font-size: 1em; color: #64748b; margin-top: 12px;">
                 <strong>Principal Investigators:</strong> Adrian C. Stier (UC Santa Barbara) & Craig W. Osenberg (University of Georgia)<br>
-                <strong>Funding:</strong> NSF OCE-2224354 (Ocean Sciences)
+                <strong>Field Team:</strong> Joseph Curtis (UCSB) & Alex Primo (UGA)<br>
+                <strong>Funding:</strong> NSF OCE-2224354 (Ocean Sciences, 2021-2025)
             </p>
             <div>
                 <span class="badge">17,073 Organisms</span>
@@ -1464,7 +1465,9 @@
                 <h3>Experiment 1: Maatea Size Experiment</h3>
                 <p><strong>Question:</strong> How does coral colony size affect CAFI abundance and community composition?</p>
                 <p><strong>Design:</strong> 60 <em>Pocillopora</em> colonies ranging from 5-47 cm in branch width</p>
+                <p><strong>Location:</strong> Maatea backreef (17.6°S, 149.8°W)</p>
                 <p><strong>Duration:</strong> 24 months (June 2019 - June 2021)</p>
+                <p><strong>Time Zone:</strong> Tahiti Time (UTC-10)</p>
                 <p><strong>Key Findings:</strong></p>
                 <ul>
                     <li>8,965 CAFI individuals identified</li>
@@ -1476,13 +1479,15 @@
 
             <div class="experiment-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
                 <h3>Experiment 2: MRB Amount Experiment</h3>
-                <p><strong>Question:</strong> Do CAFI abundance and community composition affect coral health and growth?</p>
-                <p><strong>Design:</strong> 54 <em>Pocillopora</em> colonies with manipulated CAFI densities</p>
-                <p><strong>Duration:</strong> 24 months (2019-2021)</p>
+                <p><strong>Question:</strong> Does coral habitat density affect CAFI community assembly?</p>
+                <p><strong>Design:</strong> 54 <em>Pocillopora</em> colonies in three density treatments: Low (solitary), Medium (groups of 3), High (groups of 6)</p>
+                <p><strong>Location:</strong> MRB north shore backreef (17.5°S, 149.8°W)</p>
+                <p><strong>Duration:</strong> 17 months (Dec 2019 - May 2021)</p>
+                <p><strong>Time Zone:</strong> Tahiti Time (UTC-10)</p>
                 <p><strong>Key Findings:</strong></p>
                 <ul>
                     <li>4,119 CAFI individuals identified</li>
-                    <li>Treatment effect: 34% difference in CAFI abundance (p=0.038)</li>
+                    <li>Density effects on CAFI community assembly patterns</li>
                     <li>Coral physiology measured: protein, carbohydrates, zooxanthellae</li>
                     <li>3D photogrammetry tracking coral growth over time</li>
                 </ul>
@@ -1492,7 +1497,9 @@
                 <h3 style="color: #333; border-bottom-color: rgba(51,51,51,0.3);">Survey: Mo'orea Reef Survey</h3>
                 <p><strong>Question:</strong> How variable are CAFI communities across natural reef gradients?</p>
                 <p><strong>Design:</strong> Observational survey of 114 <em>Pocillopora</em> colonies across 55 sites and 3 reef systems</p>
+                <p><strong>Location:</strong> Multiple sites around Mo'orea (17.5°S, 149.8°W)</p>
                 <p><strong>Duration:</strong> Summer 2019</p>
+                <p><strong>Time Zone:</strong> Tahiti Time (UTC-10)</p>
                 <p><strong>Key Findings:</strong></p>
                 <ul>
                     <li>3,989 CAFI individuals identified</li>
@@ -1508,7 +1515,7 @@
             </p>
             <ul style="font-size: 1.1em; line-height: 2;">
                 <li><strong>Maatea Size Experiment</strong> — Examines natural variation: How does coral size affect CAFI communities?</li>
-                <li><strong>MRB Amount Experiment</strong> — Tests causation through manipulation: How do CAFI affect coral health and growth?</li>
+                <li><strong>MRB Amount Experiment</strong> — Tests habitat density effects: How does coral clustering affect CAFI community assembly?</li>
                 <li><strong>Mo'orea Survey</strong> — Provides ecological context: What are CAFI communities like across natural reef gradients?</li>
             </ul>
             <p style="font-size: 1.05em; margin-top: 20px;">
@@ -1616,15 +1623,23 @@
             </div>
 
             <h3>📂 Folder Structure</h3>
-            <pre><code>Moorea_Coral_CAFI_Data/
+            <pre><code>moorea-cafi-data/
 ├── data/                          ← 25 data files (CSV + XLSX)
-├── metadata/                      ← 13 original field metadata files
+├── metadata/                      ← 14 metadata files
+│   ├── README_amount_project_overview.txt
+│   ├── README_size_project_overview.txt
+│   ├── README_survey_project_overview.txt
+│   ├── README_photogrammetry_metadata_v2.txt
+│   ├── README_tip_stump_comparison_dec_2019.txt
+│   ├── README_*_metadata_v*.xlsx  ← 9 data dictionaries
+│   └── README_*.docx              ← Original docs
+├── images/                        ← Figures and diagrams
 ├── README.md                      ← Start here!
 ├── GETTING_STARTED.md             ← Quick start guide
 ├── DATA_DICTIONARY.md             ← Every column explained
+├── DATA_INTRODUCTION.html         ← This file!
 ├── CITATION.cff                   ← How to cite this dataset
-├── LICENSE                        ← CC-BY-4.0 (open access)
-└── DATA_INTRODUCTION.html         ← This file!</code></pre>
+└── LICENSE                        ← CC-BY-4.0 (open access)</code></pre>
 
             <button class="back-button" onclick="showNav()">← Back to Menu</button>
         </div>
@@ -1765,9 +1780,10 @@
             <h2>🔍 How the Data Was Collected</h2>
 
             <div class="alert" style="background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%); border-left-color: #ffc107;">
-                <strong>📍 Research Location:</strong> All data were collected at <strong>Mo'orea, French Polynesia</strong> with support from the UC Berkeley Richard B. Gump South Pacific Research Station.<br><br>
-                <strong>⏱️ Timeline:</strong> Field work (June 2019 – June 2021) + Laboratory analysis (2021 – March 2023) = ~45 months total<br>
-                <strong>👥 Team:</strong> Principal Investigators Adrian C. Stier (UC Santa Barbara) & Craig W. Osenberg (University of Georgia)
+                <strong>📍 Research Location:</strong> All data were collected at <strong>Mo'orea, French Polynesia</strong> (17.5°S, 149.8°W) with support from the UC Berkeley Richard B. Gump South Pacific Research Station.<br><br>
+                <strong>⏱️ Timeline:</strong> Field work (June 2019 – June 2021) in Tahiti Time (UTC-10) + Laboratory analysis (2021 – March 2023) = ~45 months total<br>
+                <strong>👥 Team:</strong> Principal Investigators Adrian C. Stier (UC Santa Barbara) & Craig W. Osenberg (University of Georgia); Field Team: Joseph Curtis (UCSB) & Alex Primo (UGA)<br>
+                <strong>💰 Funding:</strong> NSF OCE-2224354 (2021-2025)
             </div>
 
             <h3>🪸 Field Collection</h3>
@@ -1869,11 +1885,28 @@
             </p>
 
             <h3>📖 Step 2: Read the Documentation</h3>
+            <p style="font-size: 1.1em; margin-bottom: 15px;">
+                <strong>Quick Reference:</strong>
+            </p>
             <ol style="font-size: 1.1em; line-height: 2;">
                 <li><strong>README.md</strong> — Project overview, authors, funding</li>
                 <li><strong>GETTING_STARTED.md</strong> — Quick start guide with code examples</li>
                 <li><strong>DATA_DICTIONARY.md</strong> — Every column explained</li>
             </ol>
+
+            <p style="font-size: 1.1em; margin-top: 25px; margin-bottom: 15px;">
+                <strong>Detailed Methods (metadata/ folder):</strong>
+            </p>
+            <ul style="font-size: 1.05em; line-height: 1.8;">
+                <li><strong>README_amount_project_overview.txt</strong> — MRB Amount experiment methods</li>
+                <li><strong>README_size_project_overview.txt</strong> — Maatea Size experiment methods</li>
+                <li><strong>README_survey_project_overview.txt</strong> — Survey study methods</li>
+                <li><strong>README_photogrammetry_metadata_v2.txt</strong> — 3D model processing guide</li>
+                <li><strong>README_tip_stump_comparison_dec_2019.txt</strong> — Tip vs. stump comparison</li>
+                <li><strong>site_locations.csv</strong> — GPS coordinates for all study sites (NEW!)</li>
+                <li><strong>personnel.csv</strong> — Research team details and roles (NEW!)</li>
+                <li><strong>9 Excel files (.xlsx)</strong> — Data dictionaries for each dataset</li>
+            </ul>
 
             <h3>💻 Step 3: Load the Data</h3>
 

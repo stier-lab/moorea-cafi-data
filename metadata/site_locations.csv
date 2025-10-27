@@ -1,0 +1,9 @@
+site_code,site_name,latitude_dd,longitude_dd,depth_range_m,distance_from_crest_m,habitat_type,description,study
+MRB,MRB North Shore Backreef,-17.476703,-149.813681,2-3,200,Backreef,North shore backreef near Maharepa township; experimental array site for MRB Amount density experiment,MRB Amount Experiment
+MAT,Maatea Backreef,-17.599607,-149.808107,2-3,300,Backreef,South shore backreef east of Atiha pass; experimental site for Maatea Size experiment,Maatea Size Experiment
+MRB_FOREREEF,MRB Forereef Collection Site,-17.476703,-149.813681,10,50,Forereef,North shore forereef just outside Pao Pao Bay; coral collection site for MRB Amount experiment,MRB Amount Experiment
+MAT_FOREREEF,Maatea Forereef Collection Site,-17.599607,-149.808107,10,50,Forereef,South shore backreef collection site for Maatea Size experiment corals,Maatea Size Experiment
+MRB_SURVEY,MRB Survey Site,-17.476703,-149.813681,2-3,30-150,Backreef,Mid-North shore backreef survey location,Moorea Survey
+HAU_SURVEY,HAU Survey Site,-17.48,-149.86,2-3,30-150,Backreef,Northern end of west shore survey location,Moorea Survey
+MAT_SURVEY,MAT Survey Site,-17.599607,-149.808107,2-3,30-150,Backreef,Southern end of east shore survey location,Moorea Survey
+MOOREA_GENERAL,Moorea Island General,-17.5,-149.83,0-30,0-500,Island-wide,General coordinates for Moorea island; survey sites distributed around island,Moorea Survey

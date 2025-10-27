@@ -244,12 +244,47 @@ Complete descriptions of all columns across all 25 data files.
 
 ---
 
-## Need More Details?
+---
 
-See the original metadata files in `metadata/` folder:
-- Excel files have detailed column descriptions
-- Word docs have experimental methods and protocols
+## Metadata Reference Files
+
+### New Metadata Files (Added 2025-10-27)
+
+**[metadata/site_locations.csv](metadata/site_locations.csv)**
+- GPS coordinates for all study sites (decimal degrees)
+- Depth ranges and habitat types
+- Distance from reef crest
+
+**Columns:**
+- `site_code` - Site abbreviation (MRB, MAT, HAU, etc.)
+- `site_name` - Full site name
+- `latitude_dd` - Latitude in decimal degrees
+- `longitude_dd` - Longitude in decimal degrees
+- `depth_range_m` - Depth range in meters
+- `distance_from_crest_m` - Distance from reef crest
+- `habitat_type` - Backreef, forereef, etc.
+- `description` - Detailed site description
+- `study` - Which experiment/survey
+
+**[metadata/personnel.csv](metadata/personnel.csv)**
+- Research team members and roles
+- Contact information and contributions
+
+**Columns:**
+- `name` - Full name
+- `role` - Position (PI, Field Technician, etc.)
+- `affiliation` - Institution
+- `email` - Contact email
+- `orcid` - ORCID identifier
+- `contribution` - Description of contributions
+
+### Additional Metadata
+
+See the `metadata/` folder for:
+- **5 .txt files** - Plain text method overviews
+- **9 .xlsx files** - Detailed column descriptions
+- **Original .docx files** - Complete experimental protocols
 
 ---
 
-**Last Updated:** 2025-10-24
+**Last Updated:** 2025-10-27

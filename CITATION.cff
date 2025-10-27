@@ -13,6 +13,14 @@ authors:
     email: osenberg@uga.edu
     affiliation: "University of Georgia"
     orcid: "https://orcid.org/0000-0002-9519-9525"
+  - family-names: Curtis
+    given-names: Joseph
+    affiliation: "University of California, Santa Barbara"
+    role: "Field Technician"
+  - family-names: Primo
+    given-names: Alex
+    affiliation: "University of Georgia"
+    role: "Graduate Student Researcher"
 version: 2.0.0
 date-released: 2025-10-24
 keywords:
@@ -28,6 +36,8 @@ keywords:
   - symbiosis
   - marine ecology
   - LTER
+  - Primary Production
+  - Populations
 license: CC-BY-4.0
 repository-code: "https://github.com/stier-lab/moorea-cafi-data"
 abstract: |
@@ -35,8 +45,8 @@ abstract: |
   survey examining how cryptic associated fauna and invertebrates (CAFI) affect coral reef
   ecosystems in Mo'orea, French Polynesia. The research includes: (1) Maatea Size
   Experiment - testing how coral size affects CAFI communities (60 corals, 2019-2021),
-  (2) MRB Amount Experiment - manipulating CAFI abundance to measure effects on coral
-  growth (54 corals, 2019-2021), and (3) Mo'orea Survey - characterizing natural
+  (2) MRB Amount Experiment - testing effects of coral habitat density on CAFI community
+  assembly (54 corals, 2019-2021), and (3) Mo'orea Survey - characterizing natural
   variation in CAFI communities across multiple reef sites (114 corals, 2019). Data includes
   detailed taxonomic identification of 17,073 invertebrates, coral physiology
   measurements (protein, carbohydrates, zooxanthellae), 3D photogrammetry of coral

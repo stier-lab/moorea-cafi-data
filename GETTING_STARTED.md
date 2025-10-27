@@ -12,20 +12,23 @@ Welcome! This guide will help you navigate the dataset and start your analysis.
 ### Experiment 1: Maatea Size
 - **Question:** Does coral size affect CAFI communities?
 - **Design:** 60 corals of different sizes, with/without CAFI
-- **Location:** Maatea fringing reef, Mo'orea
+- **Location:** Maatea backreef, Mo'orea (17.6°S, 149.8°W)
 - **Duration:** 2019-2021
+- **Time Zone:** Tahiti Time (UTC-10)
 
 ### Experiment 2: MRB Amount
-- **Question:** How much CAFI removal affects coral growth?
-- **Design:** 54 corals with 0%, 50%, or 100% CAFI removal
-- **Location:** MRB back reef, Mo'orea
-- **Duration:** 2019-2021
+- **Question:** Does coral habitat density affect CAFI community assembly?
+- **Design:** 54 corals in three density treatments: Low (solitary), Medium (groups of 3), High (groups of 6)
+- **Location:** MRB north shore backreef, Mo'orea (17.5°S, 149.8°W)
+- **Duration:** Dec 2019 - May 2021
+- **Time Zone:** Tahiti Time (UTC-10)
 
 ### Survey: Mo'orea-wide
 - **Question:** What's the natural variation in CAFI?
 - **Design:** 114 corals surveyed across multiple sites
-- **Location:** 4 sites around Mo'orea
+- **Location:** Multiple sites around Mo'orea (17.5°S, 149.8°W)
 - **When:** Summer 2019
+- **Time Zone:** Tahiti Time (UTC-10)
 
 ---
 
@@ -355,13 +358,49 @@ ggplot(top_families, aes(x = reorder(family, n), y = n)) +
 
 ---
 
+---
+
+## Step 8: Site Locations and Metadata
+
+### GPS Coordinates
+All study site coordinates are provided in **[metadata/site_locations.csv](metadata/site_locations.csv)**
+
+**Example - Load in R:**
+```r
+sites <- read.csv("metadata/site_locations.csv")
+head(sites)
+
+# MRB site: -17.476703, -149.813681
+# Maatea site: -17.599607, -149.808107
+```
+
+### Research Team
+Team information is in **[metadata/personnel.csv](metadata/personnel.csv)**
+
+**Principal Investigators:**
+- Adrian C. Stier (UCSB) - astier@ucsb.edu
+- Craig W. Osenberg (UGA) - osenberg@uga.edu
+
+**Field Team:**
+- Joseph Curtis (Field Technician, UCSB)
+- Alex Primo (Graduate Student, UGA)
+
+### Funding Information
+- **Grant**: NSF OCE-2224354
+- **Program**: Ocean Sciences
+- **Period**: 2021-2025
+
+---
+
 ## Need Help?
 
 ### Resources:
 1. **DATA_DICTIONARY.md** - Complete column descriptions
 2. **README.md** - Repository overview
-3. **`metadata/` folder** - Original field metadata
-4. **GitHub Issues** - Ask questions, report problems
+3. **`metadata/` folder** - 5 .txt method overviews + 9 .xlsx data dictionaries
+4. **metadata/site_locations.csv** - GPS coordinates
+5. **metadata/personnel.csv** - Research team details
+6. **GitHub Issues** - Ask questions, report problems
 
 ### Contact:
 - Adrian Stier: astier@ucsb.edu

@@ -18,40 +18,47 @@ This repository contains **complete, publication-ready data** from two field exp
 - ✅ **Original data 100% preserved** - All data as collected in the field
 - ✅ **Numeric columns added** - For statistical analysis (see below)
 - ✅ **25 data files** - Covering 2 experiments and 1 survey
-- ✅ **Complete metadata** - 13 README files with detailed methods
+- ✅ **Complete metadata** - 14 README files with detailed methods (5 .txt, 9 .xlsx)
 - ✅ **FAIR principles** - Findable, Accessible, Interoperable, Reusable
 
 ### Principal Investigators:
 - **Adrian Stier**, UC Santa Barbara (astier@ucsb.edu)
 - **Craig Osenberg**, University of Georgia
 
+### Research Team:
+- **Joseph Curtis**, Field Technician, UC Santa Barbara
+- **Alex Primo**, Graduate Student Researcher, University of Georgia
+
 ### Funding:
-- NSF OCE-2224354 (Ocean Sciences)
+- NSF OCE-2224354 (Ocean Sciences, 2021-2025)
 
 ---
 
 ## 🗂️ Repository Structure
 
 ```
-Moorea_Coral_CAFI_Data/
+moorea-cafi-data/
 ├── README.md                          # This file - START HERE
 ├── DATA_DICTIONARY.md                 # Column descriptions for all files
+├── DATA_INTRODUCTION.html             # Interactive data introduction
 ├── GETTING_STARTED.md                 # Quick start guide
+├── CITATION.cff                       # Citation information
+├── LICENSE                            # CC-BY-4.0 license
 ├── data/                              # 25 data files (CSV + Excel)
 │   ├── maatea_size_*.csv             # Maatea Size experiment (9 files)
 │   ├── moorea_survey_*.csv           # Mo'orea Survey (5 files)
 │   └── mrb_amount_*.csv              # MRB Amount experiment (11 files)
-├── metadata/                          # Original metadata from field
-│   ├── README_size_*.xlsx            # Maatea Size metadata
-│   ├── README_survey_*.xlsx          # Survey metadata
-│   ├── README_amount_*.xlsx          # MRB Amount metadata
-│   └── README_*_project_overview.docx
-├── documentation/                     # Human-readable docs
-│   ├── methods_overview.md           # Experimental methods
-│   ├── data_collection_protocols.md  # Field protocols
-│   └── column_descriptions.txt       # Plain text column guide
-└── code/                              # Data processing scripts
-    └── 00_process_round2_properly.py  # How data was prepared
+├── metadata/                          # Detailed metadata and methods
+│   ├── README_amount_project_overview.txt           # MRB Amount methods
+│   ├── README_size_project_overview.txt             # Maatea Size methods
+│   ├── README_survey_project_overview.txt           # Survey methods
+│   ├── README_photogrammetry_metadata_v2.txt        # 3D model methods
+│   ├── README_tip_stump_comparison_dec_2019.txt     # Tip/stump study
+│   ├── site_locations.csv                           # GPS coordinates
+│   ├── personnel.csv                                # Research team details
+│   ├── README_*_metadata_v*.xlsx                    # Data dictionaries
+│   └── README_*_project_overview.docx               # Original docs
+└── images/                            # Figures and diagrams
 ```
 
 ---
@@ -107,7 +114,7 @@ cafi_data['cafi_size_mm_numeric'].mean()  # Calculates mean
 ### 1. **Maatea Size Experiment** (9 files)
 **Question:** Does coral colony size affect CAFI communities?
 
-**Location:** Maatea, Mo'orea
+**Location:** Maatea backreef, Mo'orea (17.6°S, 149.8°W)
 **Years:** 2019-2021
 **Coral colonies:** 60 *Pocillopora* colonies
 **Treatments:** Different colony sizes with/without CAFI removal
@@ -118,12 +125,12 @@ cafi_data['cafi_size_mm_numeric'].mean()  # Calculates mean
 - `maatea_size_fish_surveys_2019_2021_v1.csv` - Fish community data
 
 ### 2. **MRB Amount Experiment** (11 files)
-**Question:** Does CAFI removal amount affect coral growth?
+**Question:** Does coral habitat density affect CAFI community assembly?
 
-**Location:** MRB reef, Mo'orea
+**Location:** MRB north shore backreef, Mo'orea (17.5°S, 149.8°W)
 **Years:** 2019-2021
 **Coral colonies:** 54 *Pocillopora* colonies
-**Treatments:** 0%, 50%, 100% CAFI removal
+**Treatments:** Low (solitary), Medium (groups of 3), High (groups of 6) density
 
 **Key files:**
 - `mrb_amount_cafi_field_experiment_summer_2021_v4.csv` - CAFI data
@@ -133,9 +140,10 @@ cafi_data['cafi_size_mm_numeric'].mean()  # Calculates mean
 ### 3. **Mo'orea Survey** (5 files)
 **Question:** What are natural CAFI communities like across Mo'orea?
 
-**Location:** Multiple sites around Mo'orea
+**Location:** Multiple sites around Mo'orea (17.5°S, 149.8°W)
 **Year:** 2019
 **Coral colonies:** 114 *Pocillopora* colonies surveyed
+**Time Zone:** All data collected in Tahiti Time (UTC-10)
 
 **Key files:**
 - `moorea_survey_cafi_taxonomy_summer_2019_v5.csv` - CAFI biodiversity
@@ -340,10 +348,21 @@ cor.test(merged$cafi_count, merged$protein_mg_cm2)
 
 ## 📚 Additional Documentation
 
+### Quick Reference Guides
 - **[GETTING_STARTED.md](GETTING_STARTED.md)** - Detailed introduction for new users
 - **[DATA_DICTIONARY.md](DATA_DICTIONARY.md)** - Complete column descriptions
-- **`metadata/`** - Original README files from data collection
-- **`documentation/`** - Human-readable method descriptions
+- **[DATA_INTRODUCTION.html](DATA_INTRODUCTION.html)** - Interactive data introduction
+
+### Detailed Methods (metadata/ folder)
+**Plain text overviews (.txt files):**
+- **[README_amount_project_overview.txt](metadata/README_amount_project_overview.txt)** - MRB Amount experiment methods
+- **[README_size_project_overview.txt](metadata/README_size_project_overview.txt)** - Maatea Size experiment methods
+- **[README_survey_project_overview.txt](metadata/README_survey_project_overview.txt)** - Survey study methods
+- **[README_photogrammetry_metadata_v2.txt](metadata/README_photogrammetry_metadata_v2.txt)** - 3D photogrammetry methods and model types
+- **[README_tip_stump_comparison_dec_2019.txt](metadata/README_tip_stump_comparison_dec_2019.txt)** - Tip vs. stump comparison study
+
+**Data dictionaries (.xlsx files):**
+- 9 Excel files with detailed column descriptions for each dataset
 
 ---
 
@@ -388,15 +407,22 @@ Under these terms:
 
 - ✅ **Original data preserved** - No deletions or modifications
 - ✅ **Numeric columns added** - For statistical analysis
-- ✅ **Complete metadata** - Detailed methods for every file
-- ✅ **Reproducible** - Processing code included
+- ✅ **Complete metadata** - Detailed methods for every file in accessible formats
+- ✅ **Dual format documentation** - Methods available as plain text (.txt) and original formats (.docx/.xlsx)
+- ✅ **Reproducible** - All original data and processing details preserved
 - ✅ **FAIR compliant** - Findable, Accessible, Interoperable, Reusable
 
 ---
 
 ## 🔄 Version History
 
-- **v2.0** (2025) - NSF OCE and LTER/EDI compliant release
+- **v2.1** (2025-10-27) - Enhanced metadata release
+  - Added 5 plain text (.txt) method overview files for improved accessibility
+  - Reformatted metadata files with clear structure and headers
+  - Updated README to accurately reflect repository structure
+  - All metadata now available in both human-readable (.txt) and original (.docx/.xlsx) formats
+
+- **v2.0** (2025-10-24) - NSF OCE and LTER/EDI compliant release
   - 25 data files from 2 experiments + 1 survey (added 2 tip/stump comparison files)
   - Complete metadata and documentation
   - All original data preserved with numeric columns added
@@ -404,5 +430,5 @@ Under these terms:
 
 ---
 
-**Last Updated:** 2025-10-24
+**Last Updated:** 2025-10-27
 **Repository Maintained By:** Stier Lab, UC Santa Barbara
