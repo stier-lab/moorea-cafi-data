@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 type: dataset
-title: "Mo'orea Coral Reef CAFI (Cryptic Associated Fauna and Invertebrates) Experiments: Size and Amount Manipulations 2019-2021"
+title: "Mo'orea Coral Reef CAFI (Cryptic Associated Fauna and Invertebrates) Data: Two Experiments and One Survey 2019-2021"
 authors:
   - family-names: Stier
     given-names: Adrian C.
@@ -31,13 +31,13 @@ keywords:
 license: CC-BY-4.0
 repository-code: "https://github.com/stier-lab/moorea-cafi-data"
 abstract: |
-  This dataset contains comprehensive data from three interconnected field experiments
-  examining how cryptic associated fauna and invertebrates (CAFI) affect coral reef
+  This dataset contains comprehensive data from two field experiments and one observational
+  survey examining how cryptic associated fauna and invertebrates (CAFI) affect coral reef
   ecosystems in Mo'orea, French Polynesia. The research includes: (1) Maatea Size
   Experiment - testing how coral size affects CAFI communities (60 corals, 2019-2021),
   (2) MRB Amount Experiment - manipulating CAFI abundance to measure effects on coral
   growth (54 corals, 2019-2021), and (3) Mo'orea Survey - characterizing natural
-  variation in CAFI communities across four reef sites (114 corals, 2019). Data includes
+  variation in CAFI communities across multiple reef sites (114 corals, 2019). Data includes
   detailed taxonomic identification of 17,073 invertebrates, coral physiology
   measurements (protein, carbohydrates, zooxanthellae), 3D photogrammetry of coral
   growth, and fish community surveys. All files follow FAIR data principles with
@@ -54,7 +54,7 @@ preferred-citation:
       given-names: Adrian C.
     - family-names: Osenberg
       given-names: Craig W.
-  title: "Mo'orea Coral Reef CAFI (Cryptic Associated Fauna and Invertebrates) Experiments: Size and Amount Manipulations 2019-2021"
+  title: "Mo'orea Coral Reef CAFI (Cryptic Associated Fauna and Invertebrates) Data: Two Experiments and One Survey 2019-2021"
   year: 2025
   publisher: "GitHub"
   url: "https://github.com/stier-lab/moorea-cafi-data"

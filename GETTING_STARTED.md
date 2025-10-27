@@ -6,7 +6,7 @@ Welcome! This guide will help you navigate the dataset and start your analysis.
 
 ## Step 1: Understand the Research Questions
 
-### Three Experiments, One Goal:
+### Two Experiments + One Survey, One Goal:
 **How do cryptic invertebrates (CAFI) affect coral reef ecosystems?**
 
 ### Experiment 1: Maatea Size

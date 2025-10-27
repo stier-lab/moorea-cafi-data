@@ -10,12 +10,12 @@
 
 ## 📖 About This Dataset
 
-This repository contains **complete, publication-ready data** from field experiments studying how coral colony size and CAFI removal affect coral-associated invertebrate communities in Mo'orea, French Polynesia (2019-2021).
+This repository contains **complete, publication-ready data** from two field experiments and one observational survey studying how coral colony size and CAFI communities affect coral-associated invertebrate communities in Mo'orea, French Polynesia (2019-2021).
 
 ### Key Features:
 - ✅ **Original data 100% preserved** - All data as collected in the field
 - ✅ **Numeric columns added** - For statistical analysis (see below)
-- ✅ **25 data files** - Covering 3 experiments and 1 survey
+- ✅ **25 data files** - Covering 2 experiments and 1 survey
 - ✅ **Complete metadata** - 13 README files with detailed methods
 - ✅ **FAIR principles** - Findable, Accessible, Interoperable, Reusable
 
@@ -37,7 +37,7 @@ Moorea_Coral_CAFI_Data/
 ├── GETTING_STARTED.md                 # Quick start guide
 ├── data/                              # 25 data files (CSV + Excel)
 │   ├── maatea_size_*.csv             # Maatea Size experiment (9 files)
-│   ├── moorea_survey_*.csv           # Mo'orea Survey (3 files)
+│   ├── moorea_survey_*.csv           # Mo'orea Survey (5 files)
 │   └── mrb_amount_*.csv              # MRB Amount experiment (11 files)
 ├── metadata/                          # Original metadata from field
 │   ├── README_size_*.xlsx            # Maatea Size metadata
@@ -100,7 +100,7 @@ cafi_data['cafi_size_mm_numeric'].mean()  # Calculates mean
 
 ---
 
-## 📊 The Three Experiments + Survey
+## 📊 Two Experiments + One Survey
 
 ### 1. **Maatea Size Experiment** (9 files)
 **Question:** Does coral colony size affect CAFI communities?
@@ -128,7 +128,7 @@ cafi_data['cafi_size_mm_numeric'].mean()  # Calculates mean
 - `mrb_amount_coral_growth_surface_area_change_v1.csv` - Growth measurements
 - `mrb_amount_physiology_master_2019_2021_v5.csv` - Coral physiology
 
-### 3. **Mo'orea Survey** (3 files)
+### 3. **Mo'orea Survey** (5 files)
 **Question:** What are natural CAFI communities like across Mo'orea?
 
 **Location:** Multiple sites around Mo'orea
@@ -222,7 +222,7 @@ Row 4:  cafi_size_mm = "12.3"    cafi_size_mm_numeric = 12.3
 
 ### CAFI (Cryptic Associated Fauna and Invertebrates):
 - **Collection:** Coral colonies wrapped in mesh bags, transported to lab
-- **Extraction:** 90-second freshwater immersion to expel invertebrates
+- **Extraction:** Clove oil anesthetization to expel invertebrates
 - **Identification:** Sorted, measured, identified to lowest taxonomic level
 - **Size:** Body length in millimeters (excluding appendages)
 
@@ -254,23 +254,25 @@ Row 4:  cafi_size_mm = "12.3"    cafi_size_mm_numeric = 12.3
 8. `maatea_size_photogrammetry_summer_2019_v1.xlsx` - 60 rows
 9. `maatea_size_physiology_master_long_2019_2021_v3.csv` - 118 rows
 
-### Mo'orea Survey (3 files):
+### Mo'orea Survey (5 files):
 10. `moorea_survey_cafi_taxonomy_summer_2019_v5.csv` - 3,989 rows
 11. `moorea_survey_coral_characteristics_merged_2019_v2.csv` - 114 rows
 12. `moorea_survey_physiology_master_2019_v3.csv` - 108 rows
+13. `moorea_survey_tip_stump_comparison_dec_2019_v1.xlsx` - 21 rows
+14. `moorea_survey_tip_stump_zoox_counts_dec_2019_v1.xlsx` - 108 rows
 
 ### MRB Amount Experiment (11 files):
-13. `mrb_amount_cafi_field_experiment_summer_2021_v4.csv` - 4,119 rows
-14. `mrb_amount_coral_growth_surface_area_change_filtered_v1.csv` - 44 rows
-15. `mrb_amount_coral_growth_surface_area_change_v1.csv` - 54 rows
-16. `mrb_amount_coral_id_position_treatment_v1.csv` - 54 rows
-17. `mrb_amount_experimental_treatments_v1.csv` - 54 rows
-18. `mrb_amount_fish_surveys_may_2021_v1.csv` - 999 rows
-19. `mrb_amount_manual_colony_measurements_2019_2021_v1.xlsx` - 54 rows
-20. `mrb_amount_photogrammetry_200k_mesh_dec_2019_v1.csv` - 134 rows
-21. `mrb_amount_photogrammetry_200k_mesh_may_2021_v1.csv` - 130 rows
-22. `mrb_amount_photogrammetry_measures_2019_2021_v1.csv` - 108 rows
-23. `mrb_amount_physiology_master_2019_2021_v5.csv` - 53 rows
+15. `mrb_amount_cafi_field_experiment_summer_2021_v4.csv` - 4,119 rows
+16. `mrb_amount_coral_growth_surface_area_change_filtered_v1.csv` - 44 rows
+17. `mrb_amount_coral_growth_surface_area_change_v1.csv` - 54 rows
+18. `mrb_amount_coral_id_position_treatment_v1.csv` - 54 rows
+19. `mrb_amount_experimental_treatments_v1.csv` - 54 rows
+20. `mrb_amount_fish_surveys_may_2021_v1.csv` - 999 rows
+21. `mrb_amount_manual_colony_measurements_2019_2021_v1.xlsx` - 54 rows
+22. `mrb_amount_photogrammetry_200k_mesh_dec_2019_v1.csv` - 134 rows
+23. `mrb_amount_photogrammetry_200k_mesh_may_2021_v1.csv` - 130 rows
+24. `mrb_amount_photogrammetry_measures_2019_2021_v1.csv` - 108 rows
+25. `mrb_amount_physiology_master_2019_2021_v5.csv` - 53 rows
 
 **Total:** 24,920 rows of data
 
@@ -393,7 +395,7 @@ Under these terms:
 ## 🔄 Version History
 
 - **v2.0** (2025) - NSF OCE and LTER/EDI compliant release
-  - 25 data files from 3 experiments + 1 survey (added 2 tip/stump comparison files)
+  - 25 data files from 2 experiments + 1 survey (added 2 tip/stump comparison files)
   - Complete metadata and documentation
   - All original data preserved with numeric columns added
   - Comprehensive data verification and quality control completed
