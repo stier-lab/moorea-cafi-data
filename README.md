@@ -30,6 +30,11 @@ This repository contains **complete, publication-ready data** from two field exp
 - **Alex Primo**, Graduate Student Researcher, University of Georgia
 - **Dan Cryan**, PhD Student, University of Georgia
 - **Molly Brzezinski**, Lab Manager, UC Santa Barbara
+- **Kelsey Vaughn**, PhD Student, University of Georgia
+- **Ninah Munk**, MS Student, UC Santa Barbara
+- **Lily Zhao**, PhD Student, UC Santa Barbara
+- **Kai Kopecky**, PhD Student, UC Santa Barbara
+- **Christian Deneka**, Undergraduate Researcher, University of Georgia
 
 ### Funding:
 - NSF OCE-1851510 and OCE-1851503 (Ocean Sciences, 2019-2025)
@@ -428,7 +433,7 @@ Under these terms:
 
 - **v2.2** (2024-11-11) - BCO-DMO submission preparation
   - Fixed funding information (NSF OCE-1851510 and OCE-1851503)
-  - Added Dan Cryan and Molly Brzezinski to personnel and research team
+  - Added complete research team to personnel (Dan Cryan, Molly Brzezinski, Kelsey Vaughn, Ninah Munk, Lily Zhao, Kai Kopecky, Christian Deneka)
   - Clarified organism-specific measurement methods
   - Standardized missing data codes documentation
   - Added photogrammetry file usage guide

@@ -57,11 +57,14 @@ I've systematically addressed **all 10 issues** from your October 27 review. The
 - **New:** NSF OCE-1851510 and OCE-1851503 (correct - CAFI project)
 
 ### ✅ 6. Personnel - "Add Dan and Molly? Should others be included too?"
-**Fixed:** Added Dan Cryan and Molly Brzezinski with data cleaning/QC roles
-- Dan Cryan: PhD Student, University of Georgia
-- Molly Brzezinski: Lab Manager, UC Santa Barbara
-- I focused on people involved in data cleaning as you mentioned
-- If you want to add Kelsey, Ninah, Lily, Kai, Christian, let me know their roles
+**Fixed:** Added all research team members with appropriate roles
+- Dan Cryan: PhD Student, University of Georgia (data cleaning/QC)
+- Molly Brzezinski: Lab Manager, UC Santa Barbara (data cleaning/QC)
+- Kelsey Vaughn: PhD Student, University of Georgia (field data collection)
+- Ninah Munk: MS Student, UC Santa Barbara (field data collection)
+- Lily Zhao: PhD Student, UC Santa Barbara (field data collection)
+- Kai Kopecky: PhD Student, UC Santa Barbara (field data collection)
+- Christian Deneka: Undergraduate Researcher, University of Georgia (field data collection)
 
 ### ✅ 7. Data Files - "Different versions of each file...unclear which ones are 'correct'"
 **Fixed:** Created comprehensive photogrammetry guide:

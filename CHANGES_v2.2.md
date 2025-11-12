@@ -55,11 +55,16 @@ All issues identified by Craig in his October 27, 2024 review have been systemat
   - Clarified negative values are valid for irregular bases
 
 ### ✅ 6. Personnel Metadata Updated
-**Issue:** Dan Cryan and Molly Brzezinski missing from personnel.csv
-**Fix:** Added to [metadata/personnel.csv:6-7](metadata/personnel.csv)
-- Dan Cryan: PhD Student, University of Georgia
-- Molly Brzezinski: Lab Manager, UC Santa Barbara
-- Included contribution descriptions
+**Issue:** Research team members missing from personnel.csv
+**Fix:** Added all team members to [metadata/personnel.csv](metadata/personnel.csv)
+- Dan Cryan: PhD Student, University of Georgia (data cleaning/QC)
+- Molly Brzezinski: Lab Manager, UC Santa Barbara (data cleaning/QC)
+- Kelsey Vaughn: PhD Student, University of Georgia (field data collection)
+- Ninah Munk: MS Student, UC Santa Barbara (field data collection)
+- Lily Zhao: PhD Student, UC Santa Barbara (field data collection)
+- Kai Kopecky: PhD Student, UC Santa Barbara (field data collection)
+- Christian Deneka: Undergraduate Researcher, University of Georgia (field data collection)
+- Included contribution descriptions for all personnel
 
 ### ✅ 7. Data Files Consolidated and Organized
 **Issue:** Duplicate BACKUP_ files in data folder

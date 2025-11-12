@@ -106,6 +106,11 @@ Joseph Curtis (UC Santa Barbara) - Field Technician
 Alex Primo (University of Georgia) - Graduate Student Researcher
 Dan Cryan (University of Georgia) - PhD Student
 Molly Brzezinski (UC Santa Barbara) - Lab Manager
+Kelsey Vaughn (University of Georgia) - PhD Student
+Ninah Munk (UC Santa Barbara) - MS Student
+Lily Zhao (UC Santa Barbara) - PhD Student
+Kai Kopecky (UC Santa Barbara) - PhD Student
+Christian Deneka (University of Georgia) - Undergraduate Researcher
 ```
 
 ### Step 4: Upload Files

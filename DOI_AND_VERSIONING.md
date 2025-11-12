@@ -85,7 +85,7 @@ Always document what changed between versions in:
 
 **Version 2.2** (2024-11-11)
 - Fixed funding information (NSF OCE-1851510 and OCE-1851503)
-- Added Dan Cryan and Molly Brzezinski to personnel
+- Added complete research team to personnel (11 team members)
 - Clarified measurement methods
 - Standardized missing data codes
 - Organized photogrammetry file documentation
