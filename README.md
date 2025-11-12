@@ -2,7 +2,7 @@
 
 **Cryptic Associated Fauna and Invertebrates (CAFI) Communities in Coral Reef Ecosystems**
 
-![Mo'orea Coral Reef](images/moorea_panorama.jpg)
+![Trapezia guard crab on coral](images/trapezia_serenei.jpg)
 
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Data Quality](https://img.shields.io/badge/data-original%20preserved-blue)
