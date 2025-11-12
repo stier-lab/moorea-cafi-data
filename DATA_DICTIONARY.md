@@ -127,9 +127,8 @@ Complete descriptions of all columns across all 25 data files.
 **Files:**
 - `maatea_size_photogrammetry_summary_dec_2019_v1.csv`
 - `maatea_size_photogrammetry_summary_may_2021_v1.csv`
-- `mrb_amount_photogrammetry_200k_mesh_dec_2019_v1.csv`
-- `mrb_amount_photogrammetry_200k_mesh_may_2021_v1.csv`
-- `mrb_amount_photogrammetry_measures_2019_2021_v1.csv`
+- `mrb_amount_photogrammetry_200k_mesh_2019_2021_v1.csv` (combined raw data from both sampling periods)
+- `mrb_amount_photogrammetry_measures_2019_2021_v1.csv` (cleaned for analysis)
 
 **Column Descriptions:**
 
@@ -144,6 +143,9 @@ Complete descriptions of all columns across all 25 data files.
 | `Volume..cm3.` | Number | cm³ | Colony volume |
 | `Max.height..cm.` / `max_height_cm` | Number | cm | Maximum height above reference |
 | `Min.height..cm.` / `min_height_cm` | Number | cm | Minimum height (can be negative!) |
+| `sampling_date` | Date | YYYY-MM-DD | Date of photogrammetry data collection (2019-12-01 or 2021-05-01) |
+| `version` | Text | - | Model version number (in raw 200k mesh file only) |
+| `issues_with_model` | Text | yes/no | Quality flag for model issues (in raw 200k mesh file only) |
 
 **Important Notes:**
 - Heights measured relative to **horizontal reference plane**

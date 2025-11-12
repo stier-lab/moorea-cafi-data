@@ -1,12 +1,16 @@
 # Photogrammetry-Based Coral Measurements Metadata
 
 ## Applies To These Files:
-- `mrb_amount_photogrammetry_200k_mesh_dec_2019_v1.csv`
-- `mrb_amount_photogrammetry_200k_mesh_may_2021_v1.csv`
+- `mrb_amount_photogrammetry_200k_mesh_2019_2021_v1.csv` (combined raw data, both time points)
 - `maatea_size_photogrammetry_summer_2019_v1.xlsx`
 
 **Note:** The cleaned/combined files (`mrb_amount_photogrammetry_measures_2019_2021_v1.csv` and
 `maatea_size_photogrammetry_summary_*.csv`) contain selected measurements from these raw files.
+
+**Important:** The original separate time-point files (`mrb_amount_photogrammetry_200k_mesh_dec_2019_v1.csv`
+and `mrb_amount_photogrammetry_200k_mesh_may_2021_v1.csv`) have been combined into a single file with a
+`sampling_date` column for easier analysis.
+
 See `data/README_PHOTOGRAMMETRY_FILES.md` for guidance on which file to use.
 
 ## Dataset Information

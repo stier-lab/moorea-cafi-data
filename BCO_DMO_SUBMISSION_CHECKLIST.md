@@ -115,7 +115,7 @@ Christian Deneka (University of Georgia) - Undergraduate Researcher
 
 ### Step 4: Upload Files
 
-**Data Files to Submit (25 files):**
+**Data Files to Submit (24 files):**
 
 Core CAFI and Experiment Files:
 - [ ] `maatea_size_cafi_taxonomy_merged_2019_2021_v2.csv`
@@ -139,8 +139,7 @@ Core CAFI and Experiment Files:
 - [ ] `mrb_amount_experimental_treatments_v1.csv`
 - [ ] `mrb_amount_fish_surveys_may_2021_v1.csv`
 - [ ] `mrb_amount_manual_colony_measurements_2019_2021_v1.xlsx`
-- [ ] `mrb_amount_photogrammetry_200k_mesh_dec_2019_v1.csv`
-- [ ] `mrb_amount_photogrammetry_200k_mesh_may_2021_v1.csv`
+- [ ] `mrb_amount_photogrammetry_200k_mesh_2019_2021_v1.csv`
 - [ ] `mrb_amount_photogrammetry_measures_2019_2021_v1.csv`
 - [ ] `mrb_amount_physiology_master_2019_2021_v5.csv`
 

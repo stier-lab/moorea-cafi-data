@@ -4,7 +4,7 @@
 
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Data Quality](https://img.shields.io/badge/data-original%20preserved-blue)
-![Files](https://img.shields.io/badge/files-25-orange)
+![Files](https://img.shields.io/badge/files-24-orange)
 
 ---
 
@@ -17,7 +17,7 @@ This repository contains **complete, publication-ready data** from two field exp
 ### Key Features:
 - ✅ **Original data 100% preserved** - All data as collected in the field
 - ✅ **Numeric columns added** - For statistical analysis (see below)
-- ✅ **25 data files** - Covering 2 experiments and 1 survey
+- ✅ **24 data files** - Covering 2 experiments and 1 survey
 - ✅ **Complete metadata** - 14 README files with detailed methods (5 .txt, 9 .xlsx)
 - ✅ **FAIR principles** - Findable, Accessible, Interoperable, Reusable
 
@@ -292,12 +292,11 @@ All missing data is represented as `NA` (Not Available). There are no blank cell
 19. `mrb_amount_experimental_treatments_v1.csv` - 54 rows
 20. `mrb_amount_fish_surveys_may_2021_v1.csv` - 999 rows
 21. `mrb_amount_manual_colony_measurements_2019_2021_v1.xlsx` - 54 rows
-22. `mrb_amount_photogrammetry_200k_mesh_dec_2019_v1.csv` - 134 rows
-23. `mrb_amount_photogrammetry_200k_mesh_may_2021_v1.csv` - 130 rows
-24. `mrb_amount_photogrammetry_measures_2019_2021_v1.csv` - 108 rows
-25. `mrb_amount_physiology_master_2019_2021_v5.csv` - 53 rows
+22. `mrb_amount_photogrammetry_200k_mesh_2019_2021_v1.csv` - 264 rows (all model types, both time points)
+23. `mrb_amount_photogrammetry_measures_2019_2021_v1.csv` - 108 rows (cleaned for analysis)
+24. `mrb_amount_physiology_master_2019_2021_v5.csv` - 53 rows
 
-**Total:** 24,920 rows of data
+**Total:** 24 data files, 25,054 rows of data
 
 ---
 
