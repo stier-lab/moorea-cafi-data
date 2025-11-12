@@ -236,6 +236,6 @@ If you have any questions or want changes:
 
 ---
 
-**Great work on this dataset, Craig! It's comprehensive, well-organized, and will be a valuable resource for the coral reef community.**
+The dataset is comprehensive, well-organized, and ready for submission.
 
-- Claude Code (on behalf of Adrian)
+- Adrian (with assistance from Claude Code)

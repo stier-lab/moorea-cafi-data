@@ -282,6 +282,4 @@ Before clicking "Submit" on BCO-DMO:
 
 ---
 
-**Good luck with your submission! The dataset looks comprehensive and well-documented.**
-
 For questions about this checklist, contact Adrian (astier@ucsb.edu).
