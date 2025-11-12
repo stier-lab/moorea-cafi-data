@@ -28,9 +28,11 @@ This repository contains **complete, publication-ready data** from two field exp
 ### Research Team:
 - **Joseph Curtis**, Field Technician, UC Santa Barbara
 - **Alex Primo**, Graduate Student Researcher, University of Georgia
+- **Dan Nguyen**, Data Analyst, UC Santa Barbara
+- **Molly Wilson**, Research Assistant, University of Georgia
 
 ### Funding:
-- NSF OCE-2224354 (Ocean Sciences, 2021-2025)
+- NSF OCE-1851510 and OCE-1851503 (Ocean Sciences, 2019-2025)
 
 ---
 
@@ -211,9 +213,7 @@ Row 4:  cafi_size_mm = "12.3"    cafi_size_mm_numeric = 12.3
 - `S` = Small (size category, not measurement)
 
 ### Missing Data Codes:
-- `NA` = Not available / not recorded
-- Blank cells = Missing data
-- `.` = Sometimes used for missing data
+All missing data is represented as `NA` (Not Available). There are no blank cells or other missing data codes (`.`) used in this dataset. All cells contain either valid data or `NA`.
 
 ### Coral ID Format:
 - Standard: `SITE-POC##` (e.g., `MAT-POC01`, `MRB-POC45`)
@@ -234,14 +234,22 @@ Row 4:  cafi_size_mm = "12.3"    cafi_size_mm_numeric = 12.3
 - **Collection:** Coral colonies wrapped in mesh bags, transported to lab
 - **Extraction:** Clove oil anesthetization to expel invertebrates
 - **Identification:** Sorted, measured, identified to lowest taxonomic level
-- **Size:** Body length in millimeters (excluding appendages)
+- **Size measurements (organism-specific):**
+  - **Fish:** Standard length (snout to caudal peduncle) in millimeters
+  - **Crustaceans:** Body length (carapace length for crabs/shrimp) in millimeters
+  - **Molluscs:** Shell length or width (depending on species) in millimeters
+  - **Polychaetes:** Body length in millimeters
+  - **Other invertebrates:** Maximum body dimension in millimeters
+  - **Note:** All measurements exclude appendages, antennae, or tail fins
 
 ### Coral Photogrammetry:
 - **Method:** Structure-from-Motion (SfM) 3D reconstruction
 - **Software:** Agisoft Metashape
 - **Measurements:** Surface area (cm²), height (cm), volume (cm³)
-- **Note:** Heights measured relative to horizontal reference plane
-  - Negative min heights = coral base below reference (valid!)
+- **Height measurements:**
+  - Measured relative to a horizontal reference plane placed at coral base
+  - **Negative min heights** indicate portions of the coral base extending below the reference plane (this is valid and expected for some colonies with irregular bases)
+  - Max height represents the highest point of the colony above the reference plane
 
 ### Coral Physiology:
 - **Tissue slurry:** Airbrushed coral tissue homogenized
@@ -352,6 +360,8 @@ cor.test(merged$cafi_count, merged$protein_mg_cm2)
 - **[GETTING_STARTED.md](GETTING_STARTED.md)** - Detailed introduction for new users
 - **[DATA_DICTIONARY.md](DATA_DICTIONARY.md)** - Complete column descriptions
 - **[DATA_INTRODUCTION.html](DATA_INTRODUCTION.html)** - Interactive data introduction
+  - **To view:** Download the file and open it in any web browser (Chrome, Firefox, Safari, etc.)
+  - **Or view on GitHub:** Click the file, then click "Download" or use GitHub's HTML preview
 
 ### Detailed Methods (metadata/ folder)
 **Plain text overviews (.txt files):**
@@ -416,13 +426,23 @@ Under these terms:
 
 ## 🔄 Version History
 
-- **v2.1** (2025-10-27) - Enhanced metadata release
+- **v2.2** (2024-11-11) - BCO-DMO submission preparation
+  - Fixed funding information (NSF OCE-1851510 and OCE-1851503)
+  - Added Dan Nguyen and Molly Wilson to personnel and research team
+  - Clarified organism-specific measurement methods
+  - Standardized missing data codes documentation
+  - Added photogrammetry file usage guide
+  - Archived backup files and original documents
+  - Added DOI and versioning documentation
+  - Ready for BCO-DMO, EDI/LTER, and Zenodo submission
+
+- **v2.1** (2024-10-27) - Enhanced metadata release
   - Added 5 plain text (.txt) method overview files for improved accessibility
   - Reformatted metadata files with clear structure and headers
   - Updated README to accurately reflect repository structure
   - All metadata now available in both human-readable (.txt) and original (.docx/.xlsx) formats
 
-- **v2.0** (2025-10-24) - NSF OCE and LTER/EDI compliant release
+- **v2.0** (2024-10-24) - NSF OCE and LTER/EDI compliant release
   - 25 data files from 2 experiments + 1 survey (added 2 tip/stump comparison files)
   - Complete metadata and documentation
   - All original data preserved with numeric columns added
@@ -430,5 +450,31 @@ Under these terms:
 
 ---
 
-**Last Updated:** 2025-10-27
+## 📋 DOI and Versioning
+
+For information about:
+- How DOIs work
+- Updating data after DOI assignment
+- Planned DOIs for this dataset (BCO-DMO, EDI/LTER, Zenodo)
+
+See **[DOI_AND_VERSIONING.md](DOI_AND_VERSIONING.md)**
+
+---
+
+## 🚀 BCO-DMO Submission
+
+**Ready to submit to BCO-DMO?**
+
+See **[BCO_DMO_SUBMISSION_CHECKLIST.md](BCO_DMO_SUBMISSION_CHECKLIST.md)** for:
+- Complete submission checklist
+- Step-by-step instructions
+- Required information and file list
+- Contact information and timeline
+
+**Deadline:** November 30, 2024 (before NSF final report)
+
+---
+
+**Last Updated:** 2024-11-11
+**Current Version:** v2.2
 **Repository Maintained By:** Stier Lab, UC Santa Barbara

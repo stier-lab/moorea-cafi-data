@@ -1,9 +1,18 @@
 # Photogrammetry-Based Coral Measurements Metadata
 
+## Applies To These Files:
+- `mrb_amount_photogrammetry_200k_mesh_dec_2019_v1.csv`
+- `mrb_amount_photogrammetry_200k_mesh_may_2021_v1.csv`
+- `maatea_size_photogrammetry_summer_2019_v1.xlsx`
+
+**Note:** The cleaned/combined files (`mrb_amount_photogrammetry_measures_2019_2021_v1.csv` and
+`maatea_size_photogrammetry_summary_*.csv`) contain selected measurements from these raw files.
+See `data/README_PHOTOGRAMMETRY_FILES.md` for guidance on which file to use.
+
 ## Dataset Information
-- **Dataset name**: Maatea_Dec_2019_data_measurements.csv
-- **Collection date**: December 2019
+- **Original dataset name**: Maatea_Dec_2019_data_measurements.csv
 - **Data source**: 3D photogrammetry models of coral colonies
+- **Software**: Agisoft Metashape
 
 ## Overview
 This dataset contains measurements of coral colonies derived from 3D photogrammetry models.
