@@ -1,6 +1,6 @@
 # Data Dictionary
 
-Complete descriptions of all columns across all 25 data files.
+Complete descriptions of all columns across all 24 data files.
 
 ---
 

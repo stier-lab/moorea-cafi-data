@@ -97,11 +97,11 @@ This document tracks metadata requirements for submission to:
 
 ### 9. Data Structure and Format
 - [x] **File Formats**: CSV, XLSX (open formats)
-- [x] **Number of Files**: 25 data files
+- [x] **Number of Files**: 24 data files
 - [x] **File Naming Convention**: Documented and consistent
 - [x] **Directory Structure**: Clearly documented
 - [x] **Data Tables**: All tables have column descriptions
-- [x] **Missing Value Codes**: NA, blank cells, "." documented
+- [x] **Missing Value Codes**: NA only (standardized)
 - [x] **Character Encoding**: UTF-8 (assumed, not explicitly stated)
 - [x] **Column Headers**: Present in all files
 - [x] **Data Types**: Specified in data dictionary

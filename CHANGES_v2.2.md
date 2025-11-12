@@ -118,7 +118,7 @@ All issues identified by Craig in his October 27, 2024 review have been systemat
 - Complete pre-submission review checklist
 - Step-by-step submission instructions
 - All required information pre-filled
-- File upload checklist (all 25 data files + metadata)
+- File upload checklist (all 24 data files + metadata)
 - Contact information and timeline
 - Instructions for EDI/LTER and Zenodo submissions
 - Added to [README.md:464-474](README.md)
@@ -175,7 +175,7 @@ moorea-cafi-data/
 ├── moorea-cafi-data.Rproj
 ├── data/                                  ← CLEANED (no backups)
 │   ├── README_PHOTOGRAMMETRY_FILES.md     ← NEW (usage guide)
-│   └── [25 data files]
+│   └── [24 data files]
 ├── metadata/                              ← UPDATED
 │   ├── personnel.csv                      ← UPDATED (added Dan & Molly)
 │   ├── README_photogrammetry_metadata_v2.txt  ← UPDATED (file refs)

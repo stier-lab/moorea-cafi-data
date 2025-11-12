@@ -19,7 +19,7 @@
 - [x] All files have clear naming conventions
 
 ### Data Files Review
-- [x] All 25 data files are present in `data/` folder
+- [x] All 24 data files are present in `data/` folder
 - [x] No duplicate or backup files in main data folder
 - [x] File formats are appropriate (CSV for tables, XLSX for complex metadata)
 - [x] All data files have corresponding metadata/README files

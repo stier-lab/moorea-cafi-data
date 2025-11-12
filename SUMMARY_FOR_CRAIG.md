@@ -103,7 +103,7 @@ I've systematically addressed **all 10 issues** from your October 27 review. The
 1. **`BCO_DMO_SUBMISSION_CHECKLIST.md`** - Your step-by-step submission guide
    - Pre-submission review checklist
    - Required information (all pre-filled)
-   - File upload list (all 25 data files)
+   - File upload list (all 24 data files)
    - Contact information and timeline
    - Instructions for EDI/LTER and Zenodo
 
@@ -198,7 +198,7 @@ I've systematically addressed **all 10 issues** from your October 27 review. The
 ## Repository Statistics
 
 **Files:**
-- 25 data files (clean, no backups)
+- 24 data files (clean, no backups, merged photogrammetry files)
 - 6 new documentation files
 - 14 metadata files
 - 9 image files

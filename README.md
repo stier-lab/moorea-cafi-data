@@ -51,10 +51,10 @@ moorea-cafi-data/
 ├── GETTING_STARTED.md                 # Quick start guide
 ├── CITATION.cff                       # Citation information
 ├── LICENSE                            # CC-BY-4.0 license
-├── data/                              # 25 data files (CSV + Excel)
+├── data/                              # 24 data files (CSV + Excel)
 │   ├── maatea_size_*.csv             # Maatea Size experiment (9 files)
 │   ├── moorea_survey_*.csv           # Mo'orea Survey (5 files)
-│   └── mrb_amount_*.csv              # MRB Amount experiment (11 files)
+│   └── mrb_amount_*.csv              # MRB Amount experiment (10 files)
 ├── metadata/                          # Detailed metadata and methods
 │   ├── README_amount_project_overview.txt           # MRB Amount methods
 │   ├── README_size_project_overview.txt             # Maatea Size methods
@@ -131,7 +131,7 @@ cafi_data['cafi_size_mm_numeric'].mean()  # Calculates mean
 - `maatea_size_physiology_master_long_2019_2021_v3.csv` - Coral health metrics
 - `maatea_size_fish_surveys_2019_2021_v1.csv` - Fish community data
 
-### 2. **MRB Amount Experiment** (11 files)
+### 2. **MRB Amount Experiment** (10 files)
 **Question:** Does coral habitat density affect CAFI community assembly?
 
 **Location:** MRB north shore backreef, Mo'orea (17.5°S, 149.8°W)
@@ -284,7 +284,7 @@ All missing data is represented as `NA` (Not Available). There are no blank cell
 13. `moorea_survey_tip_stump_comparison_dec_2019_v1.xlsx` - 21 rows
 14. `moorea_survey_tip_stump_zoox_counts_dec_2019_v1.xlsx` - 108 rows
 
-### MRB Amount Experiment (11 files):
+### MRB Amount Experiment (10 files):
 15. `mrb_amount_cafi_field_experiment_summer_2021_v4.csv` - 4,119 rows
 16. `mrb_amount_coral_growth_surface_area_change_filtered_v1.csv` - 44 rows
 17. `mrb_amount_coral_growth_surface_area_change_v1.csv` - 54 rows
@@ -435,6 +435,7 @@ Under these terms:
   - Added complete research team to personnel (Dan Cryan, Molly Brzezinski, Kelsey Vaughn, Ninah Munk, Lily Zhao, Kai Kopecky, Christian Deneka)
   - Clarified organism-specific measurement methods
   - Standardized missing data codes documentation
+  - Merged photogrammetry files (Dec 2019 + May 2021 → single file with sampling_date column)
   - Added photogrammetry file usage guide
   - Archived backup files and original documents
   - Added DOI and versioning documentation
