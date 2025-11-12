@@ -104,8 +104,8 @@ Craig W. Osenberg (University of Georgia) - osenberg@uga.edu - ORCID: 0000-0002-
 ```
 Joseph Curtis (UC Santa Barbara) - Field Technician
 Alex Primo (University of Georgia) - Graduate Student Researcher
-Dan Nguyen (UC Santa Barbara) - Data Analyst
-Molly Wilson (University of Georgia) - Research Assistant
+Dan Cryan (University of Georgia) - PhD Student
+Molly Brzezinski (UC Santa Barbara) - Lab Manager
 ```
 
 ### Step 4: Upload Files

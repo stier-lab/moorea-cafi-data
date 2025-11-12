@@ -21,7 +21,7 @@ All issues identified by Craig in his October 27, 2024 review have been systemat
 - Alternative instructions for GitHub preview
 
 ### ✅ 2. Research Team Updated
-**Issue:** Dan and Molly missing from Research Team
+**Issue:** Dan Cryan and Molly Brzezinski missing from Research Team
 **Fix:**
 - Added to [README.md:31-32](README.md)
 - Added to [metadata/personnel.csv:6-7](metadata/personnel.csv)
@@ -55,10 +55,10 @@ All issues identified by Craig in his October 27, 2024 review have been systemat
   - Clarified negative values are valid for irregular bases
 
 ### ✅ 6. Personnel Metadata Updated
-**Issue:** Dan and Molly missing from personnel.csv
+**Issue:** Dan Cryan and Molly Brzezinski missing from personnel.csv
 **Fix:** Added to [metadata/personnel.csv:6-7](metadata/personnel.csv)
-- Dan Nguyen: Data Analyst, UCSB
-- Molly Wilson: Research Assistant, UGA
+- Dan Cryan: PhD Student, University of Georgia
+- Molly Brzezinski: Lab Manager, UC Santa Barbara
 - Included contribution descriptions
 
 ### ✅ 7. Data Files Consolidated and Organized
@@ -147,7 +147,7 @@ Moved to `archive/` directory:
 ## Files Modified
 
 1. `README.md` - Updated throughout with fixes
-2. `metadata/personnel.csv` - Added Dan and Molly
+2. `metadata/personnel.csv` - Added Dan Cryan and Molly Brzezinski
 3. `metadata/README_photogrammetry_metadata_v2.txt` - Clarified file references
 
 ---
@@ -242,7 +242,7 @@ moorea-cafi-data/
 All questions from Craig's October 27 email have been systematically addressed:
 
 1. ✅ "All I can see is the HTML code" → Viewing instructions added
-2. ✅ "Add Dan and Molly?" → Added to README and personnel.csv
+2. ✅ "Add Dan and Molly?" → Added Dan Cryan and Molly Brzezinski to README and personnel.csv
 3. ✅ "I don't understand the difference [in missing codes]" → Clarified and standardized
 4. ✅ "I don't know what this means" (negative heights) → Explained in detail
 5. ✅ "weren't some critters measured in terms of width..." → Added organism-specific methods

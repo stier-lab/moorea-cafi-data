@@ -28,8 +28,8 @@ This repository contains **complete, publication-ready data** from two field exp
 ### Research Team:
 - **Joseph Curtis**, Field Technician, UC Santa Barbara
 - **Alex Primo**, Graduate Student Researcher, University of Georgia
-- **Dan Nguyen**, Data Analyst, UC Santa Barbara
-- **Molly Wilson**, Research Assistant, University of Georgia
+- **Dan Cryan**, PhD Student, University of Georgia
+- **Molly Brzezinski**, Lab Manager, UC Santa Barbara
 
 ### Funding:
 - NSF OCE-1851510 and OCE-1851503 (Ocean Sciences, 2019-2025)
@@ -428,7 +428,7 @@ Under these terms:
 
 - **v2.2** (2024-11-11) - BCO-DMO submission preparation
   - Fixed funding information (NSF OCE-1851510 and OCE-1851503)
-  - Added Dan Nguyen and Molly Wilson to personnel and research team
+  - Added Dan Cryan and Molly Brzezinski to personnel and research team
   - Clarified organism-specific measurement methods
   - Standardized missing data codes documentation
   - Added photogrammetry file usage guide

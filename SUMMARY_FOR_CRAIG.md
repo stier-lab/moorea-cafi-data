@@ -27,8 +27,10 @@ I've systematically addressed **all 10 issues** from your October 27 review. The
 
 ### ✅ 2. Research Team - "Add Dan and Molly?"
 **Fixed:** Yes, added them:
-- README.md - Research Team section
-- metadata/personnel.csv - With roles and contributions
+- Dan Cryan (PhD Student, University of Georgia)
+- Molly Brzezinski (Lab Manager, UC Santa Barbara)
+- Added to README.md - Research Team section
+- Added to metadata/personnel.csv - With roles and contributions
 
 ### ✅ 3. Missing Data Codes - "I don't understand the difference"
 **Fixed:** Clarified there is NO difference:
@@ -55,7 +57,9 @@ I've systematically addressed **all 10 issues** from your October 27 review. The
 - **New:** NSF OCE-1851510 and OCE-1851503 (correct - CAFI project)
 
 ### ✅ 6. Personnel - "Add Dan and Molly? Should others be included too?"
-**Fixed:** Added Dan and Molly with data cleaning/QC roles
+**Fixed:** Added Dan Cryan and Molly Brzezinski with data cleaning/QC roles
+- Dan Cryan: PhD Student, University of Georgia
+- Molly Brzezinski: Lab Manager, UC Santa Barbara
 - I focused on people involved in data cleaning as you mentioned
 - If you want to add Kelsey, Ninah, Lily, Kai, Christian, let me know their roles
 
@@ -176,7 +180,7 @@ I've systematically addressed **all 10 issues** from your October 27 review. The
 | Your Question/Comment | Fix |
 |----------------------|-----|
 | "All I can see is the HTML code" | Added viewing instructions in README |
-| "Add Dan and Molly?" | ✅ Added to README and personnel.csv |
+| "Add Dan and Molly?" | ✅ Added Dan Cryan (UGA PhD Student) and Molly Brzezinski (UCSB Lab Manager) |
 | "I don't understand the difference [NA, blank, .]" | Clarified: only NA is used |
 | "I don't know what this mean [negative heights]" | Explained reference plane methodology |
 | "weren't some critters measured...width...?" | Added organism-specific measurements |
