@@ -2,7 +2,7 @@
 
 **Dataset:** Mo'orea Coral Reef CAFI Field Experiments (2019-2021)
 **PIs:** Adrian Stier (UCSB) and Craig Osenberg (UGA)
-**NSF Awards:** OCE-1851510 and OCE-1851503
+**NSF Awards:** OCE-1851510 and OCE-1851032
 **Target Submission Date:** November 30, 2024
 
 ---
@@ -15,7 +15,7 @@
 - [x] Measurement methods are clearly described
 - [x] Missing data codes are explained
 - [x] Personnel information is complete
-- [x] Funding information is correct (OCE-1851510 and OCE-1851503)
+- [x] Funding information is correct (OCE-1851510 and OCE-1851032)
 - [x] All files have clear naming conventions
 
 ### Data Files Review
@@ -50,7 +50,7 @@
 ### Step 2: Initiate Data Submission
 - [ ] Navigate to "Contribute Data" section
 - [ ] Select "Submit New Dataset"
-- [ ] Fill in NSF award numbers: **OCE-1851510** and **OCE-1851503**
+- [ ] Fill in NSF award numbers: **OCE-1851510** and **OCE-1851032**
 
 ### Step 3: Provide Dataset Overview
 Fill in the following information:
@@ -276,7 +276,7 @@ Before clicking "Submit" on BCO-DMO:
 - [ ] Craig has reviewed and approved the dataset
 - [ ] All file names match what's listed in README
 - [ ] No sensitive data included (no personal emails, no confidential info)
-- [ ] All required NSF award numbers are included (OCE-1851510 and OCE-1851503)
+- [ ] All required NSF award numbers are included (OCE-1851510 and OCE-1851032)
 - [ ] You have time to respond to BCO-DMO data manager questions
 - [ ] NSF final report due date is clear (target: before November 30, 2024)
 

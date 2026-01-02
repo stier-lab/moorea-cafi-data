@@ -21,8 +21,8 @@ authors:
     given-names: Alex
     affiliation: "University of Georgia"
     role: "Graduate Student Researcher"
-version: 2.0.0
-date-released: 2025-10-24
+version: 2.3.0
+date-released: 2025-01-02
 keywords:
   - coral reefs
   - cryptic invertebrates
@@ -51,8 +51,9 @@ abstract: |
   detailed taxonomic identification of 17,073 invertebrates, coral physiology
   measurements (protein, carbohydrates, zooxanthellae), 3D photogrammetry of coral
   growth, and fish community surveys. All files follow FAIR data principles with
-  comprehensive metadata and are formatted for submission to NSF OCE and LTER/EDI
-  data repositories.
+  comprehensive metadata and are formatted for submission to BCO-DMO, NSF OCE, and LTER/EDI
+  data repositories. All data files comply with BCO-DMO standards: ISO 8601 dates,
+  standardized column names, and blank cells for missing values.
 contact:
   - family-names: Stier
     given-names: Adrian C.

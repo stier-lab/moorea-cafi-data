@@ -1,4 +1,4 @@
-Unnamed: 0,Chunk,Model,Model.type,Surface.Area..cm.2.,Area..cm.2.,Max.height..cm.,Min.height..cm.,Height.range..cm.,Volume..cm.3.,Extent.Volume..cm.3.,Chunk_numeric,Model_numeric,Model.type_numeric
+unnamed: 0,chunk,model,model_type,surface_area_cm_2,area_cm_2,max_height_cm,min_height_cm,height_range_cm,volume_cm_3,extent_volume_cm_3,chunk_numeric,model_numeric,model_type_numeric
 3,1-1 (FE-POC57),1-1 (FE-POC57)_closed,Mesh,9813.414766,1355.602335,25.97704327,-7.502395382,33.47943866,15891.28657,60352.61837,,,
 6,1-2 (FE-POC04),1-2 (FE-POC04)_closed,Mesh,4820.036996,739.8178897,20.87362262,-3.39173647,24.26535909,5790.364269,24097.8284,,,
 9,1-3 (FE-POC29),1-3 (FE-POC29)_closed,Mesh,7342.270204,1217.489631,24.79537382,-6.857461248,31.65283507,17036.90771,52916.80639,,,

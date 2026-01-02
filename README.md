@@ -39,7 +39,7 @@ This repository contains **complete, publication-ready data** from two field exp
 - **Christian Deneka**, Undergraduate Researcher, University of Georgia
 
 ### Funding:
-- NSF OCE-1851510 and OCE-1851503 (Ocean Sciences, 2019-2025)
+- NSF OCE-1851510 and OCE-1851032 (Ocean Sciences, 2019-2025)
 
 ---
 
@@ -219,8 +219,14 @@ Row 4:  cafi_size_mm = "12.3"    cafi_size_mm_numeric = 12.3
 - `M` = Medium (size category, not measurement)
 - `S` = Small (size category, not measurement)
 
-### Missing Data Codes:
-All missing data is represented as `NA` (Not Available). There are no blank cells or other missing data codes (`.`) used in this dataset. All cells contain either valid data or `NA`.
+### Missing Data (BCO-DMO Compliant):
+All missing data is represented by **blank/empty cells**. This dataset does NOT use placeholder codes like `NA`, `.`, or `-` for missing values.
+
+### Timezone:
+All dates and times are in **Tahiti Time (UTC-10)**.
+
+### Date Format:
+All dates are in **ISO 8601 format (YYYY-MM-DD)**.
 
 ### Coral ID Format:
 - Standard: `SITE-POC##` (e.g., `MAT-POC01`, `MRB-POC45`)
@@ -419,29 +425,37 @@ Under these terms:
 
 ---
 
-## ✅ Data Quality
+## ✅ Data Quality & BCO-DMO Compliance
 
-- ✅ **Original data preserved** - No deletions or modifications
+- ✅ **BCO-DMO compliant** - Meets all data repository standards
+- ✅ **ISO 8601 dates** - All dates in YYYY-MM-DD format
+- ✅ **Clean column names** - Lowercase with underscores only
+- ✅ **Blank cells for missing data** - No placeholder codes
+- ✅ **Decimal degrees** - GPS coordinates properly formatted
+- ✅ **Original data preserved** - Field data in original columns
 - ✅ **Numeric columns added** - For statistical analysis
 - ✅ **Complete metadata** - Detailed methods for every file in accessible formats
-- ✅ **Dual format documentation** - Methods available as plain text (.txt) and original formats (.docx/.xlsx)
-- ✅ **Reproducible** - All original data and processing details preserved
+- ✅ **Image inventory** - BCO-DMO compliant image documentation
 - ✅ **FAIR compliant** - Findable, Accessible, Interoperable, Reusable
 
 ---
 
 ## 🔄 Version History
 
+- **v2.3** (2025-01-02) - Full BCO-DMO compliance
+  - Converted all dates to ISO 8601 format (YYYY-MM-DD)
+  - Standardized column names (lowercase, underscores only)
+  - Replaced NA values with blank cells per BCO-DMO standards
+  - Added image inventory CSV (images/image_inventory.csv)
+  - Added CLAUDE.md with compliance documentation
+  - Updated DATA_DICTIONARY.md and README.md for compliance
+
 - **v2.2** (2024-11-11) - BCO-DMO submission preparation
-  - Fixed funding information (NSF OCE-1851510 and OCE-1851503)
-  - Added complete research team to personnel (Dan Cryan, Molly Brzezinski, Kelsey Vaughn, Ninah Munk, Lily Zhao, Kai Kopecky, Christian Deneka)
+  - Fixed funding information (NSF OCE-1851510 and OCE-1851032)
+  - Added complete research team to personnel
   - Clarified organism-specific measurement methods
-  - Standardized missing data codes documentation
-  - Merged photogrammetry files (Dec 2019 + May 2021 → single file with sampling_date column)
-  - Added photogrammetry file usage guide
-  - Archived backup files and original documents
+  - Merged photogrammetry files (Dec 2019 + May 2021)
   - Added DOI and versioning documentation
-  - Ready for BCO-DMO, EDI/LTER, and Zenodo submission
 
 - **v2.1** (2024-10-27) - Enhanced metadata release
   - Added 5 plain text (.txt) method overview files for improved accessibility
@@ -482,6 +496,6 @@ See **[BCO_DMO_SUBMISSION_CHECKLIST.md](BCO_DMO_SUBMISSION_CHECKLIST.md)** for:
 
 ---
 
-**Last Updated:** 2024-11-11
-**Current Version:** v2.2
+**Last Updated:** 2025-01-02
+**Current Version:** v2.3 (BCO-DMO Compliant)
 **Repository Maintained By:** Stier Lab, UC Santa Barbara

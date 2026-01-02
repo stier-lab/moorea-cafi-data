@@ -84,7 +84,7 @@ Always document what changed between versions in:
 ## Current Version
 
 **Version 2.2** (2024-11-11)
-- Fixed funding information (NSF OCE-1851510 and OCE-1851503)
+- Fixed funding information (NSF OCE-1851510 and OCE-1851032)
 - Added complete research team to personnel (11 team members)
 - Clarified measurement methods
 - Standardized missing data codes

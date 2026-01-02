@@ -28,10 +28,10 @@ Complete descriptions of all columns across all 24 data files.
 - **`lowest_level`** - Most specific taxonomic identification achieved
 
 ### Coral Measurements:
-- **`surface_area`** - Coral surface area (cm²)
-- **`max_height`** / **`Max.height..cm.`** - Maximum height (cm)
-- **`min_height`** / **`Min.height..cm.`** - Minimum height (cm)
-- **`volume`** - Coral volume (cm³)
+- **`surface_area`** / **`surface_area_cm2`** - Coral surface area (cm²)
+- **`max_height`** / **`max_height_cm`** - Maximum height (cm)
+- **`min_height`** / **`min_height_cm`** - Minimum height (cm)
+- **`volume`** / **`volume_cm3`** - Coral volume (cm³)
 
 ### Physiology:
 - **`protein_mg_cm2`** - Protein content (mg/cm²)
@@ -237,12 +237,25 @@ Complete descriptions of all columns across all 24 data files.
 
 ---
 
-## Missing Data Codes
+## Missing Data Handling
 
-- **`NA`** - Not available / not recorded
-- **Blank cell** - Missing data
-- **`.`** - Sometimes used for missing
-- **`-`** - Sometimes used for missing
+**Standard**: All missing data is represented by **blank/empty cells** (BCO-DMO compliant).
+
+**Note**: This dataset does NOT use placeholder codes like `NA`, `.`, or `-` for missing values. Empty cells indicate missing data.
+
+### Special Data Flags (Not Missing Values)
+
+These codes represent meaningful field observations, NOT missing data:
+
+| Code | Meaning | Column |
+|------|---------|--------|
+| `<5` | Less than 5mm (too small to measure precisely) | cafi_size_mm |
+| `<1` | Less than 1mm (very small larvae/juveniles) | cafi_size_mm |
+| `L`, `M`, `S` | Size categories (Large, Medium, Small) | cafi_size_mm |
+
+### Timezone
+
+All dates and times in this dataset are in **Tahiti Time (UTC-10)**.
 
 ---
 
@@ -289,4 +302,6 @@ See the `metadata/` folder for:
 
 ---
 
-**Last Updated:** 2025-10-27
+**Last Updated:** 2025-01-02
+
+**BCO-DMO Compliance Update:** All date columns converted to ISO 8601 format (YYYY-MM-DD), column names standardized, missing values represented as blank cells.
