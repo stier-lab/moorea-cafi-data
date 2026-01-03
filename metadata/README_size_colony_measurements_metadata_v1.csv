@@ -1,0 +1,36 @@
+column_name,units,description
+coral_id,dimensionless,Unique coral colony identifier (format: FE-POC## e.g. FE-POC57)
+position,dimensionless,Position of colony within experimental array (format: Row-Column e.g. 1-1)
+branch_width,dimensionless,Branch width size category (thin medium wide)
+cafi,dimensionless,CAFI treatment assignment (CAFI = present; NO CAFI = removed)
+size_class,mm,Initial branch width measurement in millimeters
+length_june,cm,Colony length measured in June 2019
+width_june,cm,Colony width measured in June 2019
+height_june,cm,Colony height measured in June 2019
+circumference_june,cm,Colony circumference measured in June 2019
+volume_est_june,cm3,Estimated colony volume in June 2019
+notes_june,dimensionless,Field notes from June 2019 measurements
+length_dec,cm,Colony length measured in December 2019
+width_dec,cm,Colony width measured in December 2019
+height_dec,cm,Colony height measured in December 2019
+circumference_dec,cm,Colony circumference measured in December 2019
+volume_est_dec,cm3,Estimated colony volume in December 2019
+percent_alive_dec,percent,Percent of coral colony alive at December 2019 sampling
+notes_dec,dimensionless,Field notes from December 2019 measurements
+vol_difference_jun_dec,cm3,Difference in estimated volume between June and December 2019
+intact_dec,dimensionless,Whether colony was intact at December 2019 sampling
+observer_may21,dimensionless,Observer initials for May 2021 measurements
+length_may21,cm,Colony length measured in May 2021
+width_may21,cm,Colony width measured in May 2021
+height_may21,cm,Colony height measured in May 2021
+percent_alive_may21,percent,Percent of coral colony alive at May 2021 sampling
+notes_may21,dimensionless,Field notes from May 2021 measurements
+coral_id_numeric,dimensionless,Numeric encoding of coral_id (for statistical software)
+position_numeric,dimensionless,Numeric encoding of position (for statistical software)
+branch_width_numeric,dimensionless,Numeric encoding of branch_width (for statistical software)
+cafi_numeric,dimensionless,Numeric encoding of cafi treatment (for statistical software)
+notes_june_numeric,dimensionless,Numeric encoding of notes_june (for statistical software)
+notes_dec_numeric,dimensionless,Numeric encoding of notes_dec (for statistical software)
+intact_dec_numeric,dimensionless,Numeric encoding of intact_dec (for statistical software)
+observer_may21_numeric,dimensionless,Numeric encoding of observer_may21 (for statistical software)
+notes_may21_numeric,dimensionless,Numeric encoding of notes_may21 (for statistical software)

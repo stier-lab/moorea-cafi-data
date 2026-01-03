@@ -1,0 +1,4 @@
+column_name,units,description
+coral_id,dimensionless,Unique coral colony identifier (format: FE-POC## e.g. FE-POC92)
+position,dimensionless,Position within experimental array (format: Row-ColumnLetter e.g. 2-7A)
+treatment,dimensionless,Habitat density treatment (1 = low/1 coral; 3 = medium/3 corals; 6 = high/6 corals per patch)

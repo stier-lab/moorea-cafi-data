@@ -1,0 +1,8 @@
+column_name,units,description
+coral,dimensionless,Coral identifier within patch (A B C D E F - up to 6 corals per high-density patch)
+row,dimensionless,Row number in experimental grid (1-3)
+column,dimensionless,Column number in experimental grid (1-9)
+patch_number,dimensionless,Unique patch identifier within experimental array
+percent_alive_5_2021,percent,Percent of coral colony alive at May 2021 sampling
+pomacentrids,individuals,Count of pomacentrid fish (damselfishes) observed at coral
+habitat_treatment,dimensionless,Habitat density treatment (1 = low/1 coral; 3 = medium/3 corals; 6 = high/6 corals per patch)

@@ -1,0 +1,10 @@
+column_name,units,description
+coral_id,dimensionless,Unique coral colony identifier (format: FE-POC## e.g. FE-POC57)
+position,dimensionless,Position of colony within experimental array (format: Row-Column e.g. 1-1)
+treatment,dimensionless,Experimental treatment assignment (CAFI = CAFI present; NO CAFI = CAFI removed)
+branch_width,dimensionless,Branch width size category (thin medium wide)
+size_class,mm,Initial branch width measurement in millimeters
+coral_id_numeric,dimensionless,Numeric encoding of coral_id (for statistical software)
+position_numeric,dimensionless,Numeric encoding of position (for statistical software)
+treatment_numeric,dimensionless,Numeric encoding of treatment (for statistical software)
+branch_width_numeric,dimensionless,Numeric encoding of branch_width (for statistical software)

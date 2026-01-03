@@ -1,0 +1,37 @@
+column_name,units,notes
+sort,dimensionless,Integer sorting index
+date_collected,YYYY-MM-DD,ISO 8601 date format (UTC-10 Tahiti Time)
+date_observed,YYYY-MM-DD,ISO 8601 date format (UTC-10 Tahiti Time)
+data_sheet,dimensionless,Data sheet reference number
+row,dimensionless,Integer row number (1-3)
+column,dimensionless,Integer column number (1-9)
+position,dimensionless,Grid position code (Row-Column format)
+coral_id,dimensionless,Coral colony identifier code
+time_point,dimensionless,Categorical (initial intermediate final)
+site,dimensionless,Site name code
+type,dimensionless,Organism type category
+code,dimensionless,Taxonomic code (4 letters)
+count,individuals,Integer count of organisms
+cafi_size_mm,mm,Body size in millimeters (may include <5 <1 L M S codes)
+search_term,dimensionless,Taxonomic search term
+lowest_level,dimensionless,Taxonomic rank achieved (species genus family etc.)
+alt_size_mm,mm,Alternative body size in millimeters
+cafi_weight,g,Organism mass in grams
+photo_type,dimensionless,Photography method category
+photo_num,dimensionless,Photo file reference
+notes,dimensionless,Free text notes
+worms_id,dimensionless,WoRMS AphiaID integer
+phylum,dimensionless,Taxonomic phylum name
+subphylum,dimensionless,Taxonomic subphylum name
+superclass,dimensionless,Taxonomic superclass name
+class,dimensionless,Taxonomic class name
+subclass,dimensionless,Taxonomic subclass name
+superorder,dimensionless,Taxonomic superorder name
+order,dimensionless,Taxonomic order name
+suborder,dimensionless,Taxonomic suborder name
+infraorder,dimensionless,Taxonomic infraorder name
+superfamily,dimensionless,Taxonomic superfamily name
+family,dimensionless,Taxonomic family name
+subfamily,dimensionless,Taxonomic subfamily name
+genus,dimensionless,Taxonomic genus name
+species,dimensionless,Taxonomic species name

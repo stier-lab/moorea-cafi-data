@@ -1,0 +1,9 @@
+column_name,units,description
+coral_id,dimensionless,Unique coral colony identifier (format: POC## e.g. POC61)
+delta_surface_area,cm2,Change in coral surface area between December 2019 and May 2021 (negative values indicate shrinkage)
+delta_volume,cm3,Change in coral volume between December 2019 and May 2021 (negative values indicate shrinkage)
+delta_max_height,cm,Change in maximum coral height between December 2019 and May 2021 (negative values indicate shrinkage)
+delta_interstitial,cm3,Change in interstitial volume between December 2019 and May 2021
+size_corrected_volume_growth,dimensionless,Volume growth rate corrected for initial colony size
+treatment,dimensionless,Habitat density treatment (1 = low/1 coral; 3 = medium/3 corals; 6 = high/6 corals per patch)
+reef,dimensionless,Reef location identifier within experimental site (format: Reef_Row-Column)

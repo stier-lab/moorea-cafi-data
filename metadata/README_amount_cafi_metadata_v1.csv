@@ -1,0 +1,35 @@
+column_name,units,description
+sort,dimensionless,Sorting number assigned by original data manager
+date_collected,YYYY-MM-DD,Date of specimen collection (ISO 8601 format in UTC-10 Tahiti Time)
+date_observed,YYYY-MM-DD,Date of specimen observation (ISO 8601 format in UTC-10 Tahiti Time)
+data_sheet,dimensionless,Number written on entered data sheet
+row,dimensionless,Row of coral in experimental array (1-3)
+column,dimensionless,Column of coral in experimental array (1-9)
+sub_reef,dimensionless,Sub-reef identifier within experimental site
+coral_id,dimensionless,Identity of coral colony sampled (format: SITE-POC## e.g. FE-POC01)
+site,dimensionless,Site of observation
+type,dimensionless,Broad classification of observed organism (e.g. snail shrimp fish crab worm)
+code,dimensionless,Species code - first two letters of genus and species combined (e.g. TRSE for Trapezia serenei)
+count,individuals,Number of observed organisms within a given size class
+cafi_size_mm,mm,Size measurement of organism in millimeters
+search_term,dimensionless,Finest resolution of taxonomic identification for observed organism
+lowest_level,dimensionless,Lowest taxonomic level identified for organism (species genus family etc.)
+alt_size_mm,mm,Alternative size measurement of observed organism in millimeters
+photo_type,dimensionless,Method used to acquire measurement (macro micro etc.)
+photo_num,dimensionless,Corresponding photograph filename with photo of organism and scale bar
+notes,dimensionless,General notes from field or about file merging
+worms_id,dimensionless,Identification number from World Register of Marine Species (WoRMS AphiaID)
+phylum,dimensionless,Phylum of observed organism (blank if not known)
+subphylum,dimensionless,Subphylum of observed organism (blank if not known)
+superclass,dimensionless,Superclass of observed organism (blank if not known)
+class,dimensionless,Class of observed organism (blank if not known)
+subclass,dimensionless,Subclass of observed organism (blank if not known)
+superorder,dimensionless,Superorder of observed organism (blank if not known)
+order,dimensionless,Order of observed organism (blank if not known)
+suborder,dimensionless,Suborder of observed organism (blank if not known)
+infraorder,dimensionless,Infraorder of observed organism (blank if not known)
+superfamily,dimensionless,Superfamily of observed organism (blank if not known)
+family,dimensionless,Family of observed organism (blank if not known)
+subfamily,dimensionless,Subfamily of observed organism (blank if not known)
+genus,dimensionless,Genus of observed organism (blank if not known)
+species,dimensionless,Species of observed organism (blank if not known)
