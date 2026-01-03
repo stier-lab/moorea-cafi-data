@@ -6,7 +6,7 @@
 
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Data Quality](https://img.shields.io/badge/data-original%20preserved-blue)
-![Files](https://img.shields.io/badge/files-24-orange)
+![Files](https://img.shields.io/badge/files-23-orange)
 
 ---
 
@@ -19,7 +19,7 @@ This repository contains **complete, publication-ready data** from two field exp
 ### Key Features:
 - ✅ **Original data 100% preserved** - All data as collected in the field
 - ✅ **Numeric columns added** - For statistical analysis (see below)
-- ✅ **24 data files** - Covering 2 experiments and 1 survey
+- ✅ **23 data files** - Covering 2 experiments and 1 survey
 - ✅ **Complete metadata** - 14 README files with detailed methods (5 .txt, 9 .xlsx)
 - ✅ **FAIR principles** - Findable, Accessible, Interoperable, Reusable
 
@@ -53,8 +53,8 @@ moorea-cafi-data/
 ├── GETTING_STARTED.md                 # Quick start guide
 ├── CITATION.cff                       # Citation information
 ├── LICENSE                            # CC-BY-4.0 license
-├── data/                              # 24 data files (CSV + Excel)
-│   ├── maatea_size_*.csv             # Maatea Size experiment (9 files)
+├── data/                              # 23 data files (CSV + Excel)
+│   ├── maatea_size_*.csv             # Maatea Size experiment (8 files)
 │   ├── moorea_survey_*.csv           # Mo'orea Survey (5 files)
 │   └── mrb_amount_*.csv              # MRB Amount experiment (10 files)
 ├── metadata/                          # Detailed metadata and methods
@@ -274,37 +274,36 @@ All dates are in **ISO 8601 format (YYYY-MM-DD)**.
 
 ## 🗃️ Complete File List
 
-### Maatea Size Experiment (9 files):
+### Maatea Size Experiment (8 files):
 1. `maatea_size_cafi_taxonomy_merged_2019_2021_v2.csv` - 8,965 rows
 2. `maatea_size_colony_measurements_wide_2019_2021_v1.csv` - 60 rows
 3. `maatea_size_experimental_treatments_v1.csv` - 945 rows
 4. `maatea_size_fish_surveys_2019_2021_v1.csv` - 4,581 rows
 5. `maatea_size_genetic_samples_metadata_v3.xlsx` - 60 rows
-6. `maatea_size_photogrammetry_summary_dec_2019_v1.csv` - 58 rows
-7. `maatea_size_photogrammetry_summary_may_2021_v1.csv` - 59 rows
-8. `maatea_size_photogrammetry_summer_2019_v1.xlsx` - 60 rows
-9. `maatea_size_physiology_master_long_2019_2021_v3.csv` - 118 rows
+6. `maatea_size_photogrammetry_2019_2021_v1.csv` - 117 rows (combined Dec 2019 + May 2021)
+7. `maatea_size_photogrammetry_summer_2019_v1.xlsx` - 60 rows (supplemental)
+8. `maatea_size_physiology_master_long_2019_2021_v3.csv` - 118 rows
 
 ### Mo'orea Survey (5 files):
-10. `moorea_survey_cafi_taxonomy_summer_2019_v5.csv` - 3,989 rows
-11. `moorea_survey_coral_characteristics_merged_2019_v2.csv` - 114 rows
-12. `moorea_survey_physiology_master_2019_v3.csv` - 108 rows
-13. `moorea_survey_tip_stump_comparison_dec_2019_v1.xlsx` - 21 rows
-14. `moorea_survey_tip_stump_zoox_counts_dec_2019_v1.xlsx` - 108 rows
+9. `moorea_survey_cafi_taxonomy_summer_2019_v5.csv` - 3,989 rows
+10. `moorea_survey_coral_characteristics_merged_2019_v2.csv` - 114 rows
+11. `moorea_survey_physiology_master_2019_v3.csv` - 108 rows
+12. `moorea_survey_tip_stump_comparison_dec_2019_v1.xlsx` - 21 rows (supplemental)
+13. `moorea_survey_tip_stump_zoox_counts_dec_2019_v1.xlsx` - 108 rows (supplemental)
 
 ### MRB Amount Experiment (10 files):
-15. `mrb_amount_cafi_field_experiment_summer_2021_v4.csv` - 4,119 rows
-16. `mrb_amount_coral_growth_surface_area_change_filtered_v1.csv` - 44 rows
-17. `mrb_amount_coral_growth_surface_area_change_v1.csv` - 54 rows
-18. `mrb_amount_coral_id_position_treatment_v1.csv` - 54 rows
-19. `mrb_amount_experimental_treatments_v1.csv` - 54 rows
-20. `mrb_amount_fish_surveys_may_2021_v1.csv` - 999 rows
-21. `mrb_amount_manual_colony_measurements_2019_2021_v1.xlsx` - 54 rows
-22. `mrb_amount_photogrammetry_200k_mesh_2019_2021_v1.csv` - 264 rows (all model types, both time points)
-23. `mrb_amount_photogrammetry_measures_2019_2021_v1.csv` - 108 rows (cleaned for analysis)
-24. `mrb_amount_physiology_master_2019_2021_v5.csv` - 53 rows
+14. `mrb_amount_cafi_field_experiment_summer_2021_v4.csv` - 4,119 rows
+15. `mrb_amount_coral_growth_surface_area_change_filtered_v1.csv` - 44 rows (supplemental QC)
+16. `mrb_amount_coral_growth_surface_area_change_v1.csv` - 54 rows
+17. `mrb_amount_coral_id_position_treatment_v1.csv` - 54 rows (supplemental)
+18. `mrb_amount_experimental_treatments_v1.csv` - 54 rows
+19. `mrb_amount_fish_surveys_may_2021_v1.csv` - 999 rows
+20. `mrb_amount_manual_colony_measurements_2019_2021_v1.xlsx` - 54 rows (supplemental)
+21. `mrb_amount_photogrammetry_200k_mesh_2019_2021_v1.csv` - 264 rows (supplemental raw)
+22. `mrb_amount_photogrammetry_measures_2019_2021_v1.csv` - 108 rows
+23. `mrb_amount_physiology_master_2019_2021_v5.csv` - 53 rows
 
-**Total:** 24 data files, 25,054 rows of data
+**Total:** 23 data files
 
 ---
 
@@ -450,11 +449,16 @@ Under these terms:
   - Added CLAUDE.md with compliance documentation
   - Updated DATA_DICTIONARY.md and README.md for compliance
 
+- **v2.6** (2025-01-03) - Repository cleanup and BCO-DMO finalization
+  - Consolidated to 3 BCO-DMO datasets (Biological, Morphometry, Experimental Design)
+  - Added parameter metadata for all 23 files
+  - Consolidated Maatea photogrammetry files (24→23 files)
+  - Full BCO-DMO format compliance (ISO 8601 dates, blank missing values)
+
 - **v2.2** (2024-11-11) - BCO-DMO submission preparation
   - Fixed funding information (NSF OCE-1851510 and OCE-1851032)
   - Added complete research team to personnel
   - Clarified organism-specific measurement methods
-  - Merged photogrammetry files (Dec 2019 + May 2021)
   - Added DOI and versioning documentation
 
 - **v2.1** (2024-10-27) - Enhanced metadata release

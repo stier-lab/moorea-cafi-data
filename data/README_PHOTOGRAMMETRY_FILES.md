@@ -15,7 +15,6 @@ There are **TWO photogrammetry files** for the MRB Amount experiment. Here's whi
 
 ### 📊 TECHNICAL/RAW MODEL FILE:
 **`mrb_amount_photogrammetry_200k_mesh_2019_2021_v1.csv`** (264 rows)
-- **NEW:** Combined raw data from both Dec 2019 and May 2021 in ONE file
 - Contains ALL model versions (open, closed) for each colony at each time point
 - Includes `sampling_date` column (2019-12-01 or 2021-05-01)
 - Includes technical QC columns (version, issues_with_model)
@@ -26,23 +25,24 @@ There are **TWO photogrammetry files** for the MRB Amount experiment. Here's whi
   - Compare open vs closed model measurements
   - Troubleshoot measurements
 
-**Note:** The original separate time-point files (`mrb_amount_photogrammetry_200k_mesh_dec_2019_v1.csv`
-and `mrb_amount_photogrammetry_200k_mesh_may_2021_v1.csv`) have been archived. Craig correctly pointed out
-these should be combined with a sampling date column for easier analysis.
-
 ---
 
 ## Understanding Maatea Size Photogrammetry Files
 
-### Main Files:
-**`maatea_size_photogrammetry_summary_dec_2019_v1.csv`** (58 rows)
-- Summary measurements for Dec 2019 colonies
+There are **TWO photogrammetry files** for the Maatea Size experiment:
 
-**`maatea_size_photogrammetry_summary_may_2021_v1.csv`** (59 rows)
-- Summary measurements for May 2021 colonies
+### ✅ RECOMMENDED FOR ANALYSIS:
+**`maatea_size_photogrammetry_2019_2021_v1.csv`** (117 rows)
+- **USE THIS FILE** for coral growth and surface area analyses
+- Combined data from both Dec 2019 and May 2021
+- Includes `sampling_date` column (2019-12-01 or 2021-05-01)
+- Clean CSV format ready for analysis
 
+### 📊 SUPPLEMENTAL/DETAILED FILE:
 **`maatea_size_photogrammetry_summer_2019_v1.xlsx`** (60 rows)
-- Detailed measurements including multiple model types
+- Original detailed measurements from summer 2019
+- Excel format with additional metadata
+- Contains multiple model types and detailed notes
 
 ---
 
@@ -52,17 +52,16 @@ these should be combined with a sampling date column for easier analysis.
 |------|------|---------|-------------|
 | `mrb_amount_photogrammetry_measures_2019_2021_v1.csv` | 108 | **Analysis** ✅ | Both (combined) |
 | `mrb_amount_photogrammetry_200k_mesh_2019_2021_v1.csv` | 264 | QC/verification | Both (combined) |
-| `maatea_size_photogrammetry_summary_dec_2019_v1.csv` | 58 | Analysis | Dec 2019 only |
-| `maatea_size_photogrammetry_summary_may_2021_v1.csv` | 59 | Analysis | May 2021 only |
-| `maatea_size_photogrammetry_summer_2019_v1.xlsx` | 60 | Detailed data | Summer 2019 |
+| `maatea_size_photogrammetry_2019_2021_v1.csv` | 117 | **Analysis** ✅ | Both (combined) |
+| `maatea_size_photogrammetry_summer_2019_v1.xlsx` | 60 | Supplemental | Summer 2019 |
 
 ---
 
 ## Key Points:
 
-1. **For analysis**: Use the "measures" or "summary" files ✅
-2. **For QC/technical work**: Use the "200k_mesh" file
-3. **MRB files now combined**: One file with `sampling_date` column (following Craig's suggestion)
+1. **For analysis**: Use the "measures" or combined CSV files ✅
+2. **For QC/technical work**: Use the "200k_mesh" file (MRB only)
+3. **All files now combined**: Include `sampling_date` column to distinguish time points
 4. **Multiple models per colony**: The raw 200k_mesh file has both open and closed model types
 5. **Measures file = best measurements**: Already selected the appropriate model for each measurement type
 

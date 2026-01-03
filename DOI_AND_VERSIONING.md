@@ -83,16 +83,18 @@ Always document what changed between versions in:
 
 ## Current Version
 
-**Version 2.2** (2024-11-11)
-- Fixed funding information (NSF OCE-1851510 and OCE-1851032)
-- Added complete research team to personnel (11 team members)
-- Clarified measurement methods
-- Standardized missing data codes
-- Organized photogrammetry file documentation
-- Archived old reports and backup files
-- Ready for BCO-DMO submission
+**Version 2.6** (2025-01-03)
+- Consolidated to 3 BCO-DMO datasets (from 6)
+- Added parameter metadata for all 23 files
+- Consolidated Maatea photogrammetry files (24→23 files)
+- Full BCO-DMO format compliance (ISO 8601 dates, blank missing values)
 
 ### Version History:
+- **v2.6** (2025-01-03) - Consolidated to 3 datasets (Biological, Morphometry, Experimental Design)
+- **v2.5** (2025-01-03) - Added parameter metadata for all files
+- **v2.4** (2025-01-03) - File consolidation (24→23 files)
+- **v2.3** (2025-01-02) - BCO-DMO format compliance complete
+- **v2.2** (2024-11-11) - Fixed funding, added personnel
 - **v2.1** (2024-10-27) - Enhanced metadata release
 - **v2.0** (2024-10-24) - NSF OCE and LTER/EDI compliant release
 - **v1.x** - Internal development versions
