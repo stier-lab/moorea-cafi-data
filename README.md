@@ -20,7 +20,8 @@ This repository contains **complete, publication-ready data** from two field exp
 - ✅ **Original data 100% preserved** - All data as collected in the field
 - ✅ **Numeric columns added** - For statistical analysis (see below)
 - ✅ **23 data files** - Covering 2 experiments and 1 survey
-- ✅ **Complete metadata** - 14 README files with detailed methods (5 .txt, 9 .xlsx)
+- ✅ **Complete metadata** - 24 metadata files (5 .txt, 8 .xlsx, 10 .csv)
+- ✅ **BCO-DMO compliant** - Ready for data repository submission
 - ✅ **FAIR principles** - Findable, Accessible, Interoperable, Reusable
 
 ### Principal Investigators:
@@ -48,26 +49,26 @@ This repository contains **complete, publication-ready data** from two field exp
 ```
 moorea-cafi-data/
 ├── README.md                          # This file - START HERE
+├── BCO_DMO_FILE_DESCRIPTIONS.csv      # BCO-DMO dataset organization
+├── BCO_DMO_SUBMISSION_CHECKLIST.md    # Submission status and checklist
+├── CLAUDE.md                          # Repository context for AI assistants
+├── CITATION.cff                       # Citation information
 ├── DATA_DICTIONARY.md                 # Column descriptions for all files
 ├── DATA_INTRODUCTION.html             # Interactive data introduction
+├── DOI_AND_VERSIONING.md              # DOI and versioning guide
 ├── GETTING_STARTED.md                 # Quick start guide
-├── CITATION.cff                       # Citation information
 ├── LICENSE                            # CC-BY-4.0 license
 ├── data/                              # 23 data files (CSV + Excel)
-│   ├── maatea_size_*.csv             # Maatea Size experiment (8 files)
-│   ├── moorea_survey_*.csv           # Mo'orea Survey (5 files)
-│   └── mrb_amount_*.csv              # MRB Amount experiment (10 files)
-├── metadata/                          # Detailed metadata and methods
-│   ├── README_amount_project_overview.txt           # MRB Amount methods
-│   ├── README_size_project_overview.txt             # Maatea Size methods
-│   ├── README_survey_project_overview.txt           # Survey methods
-│   ├── README_photogrammetry_metadata_v2.txt        # 3D model methods
-│   ├── README_tip_stump_comparison_dec_2019.txt     # Tip/stump study
-│   ├── site_locations.csv                           # GPS coordinates
-│   ├── personnel.csv                                # Research team details
-│   ├── README_*_metadata_v*.xlsx                    # Data dictionaries
-│   └── README_*_project_overview.docx               # Original docs
-└── images/                            # Figures and diagrams
+│   ├── maatea_size_*                 # Maatea Size experiment (8 files)
+│   ├── moorea_survey_*               # Mo'orea Survey (5 files)
+│   └── mrb_amount_*                  # MRB Amount experiment (10 files)
+├── metadata/                          # 24 metadata files
+│   ├── README_*_project_overview.txt # Method overviews (5 .txt files)
+│   ├── README_*_metadata_v*.xlsx     # Data dictionaries (8 .xlsx files)
+│   ├── README_*_metadata_v*.csv      # BCO-DMO parameter definitions (8 .csv)
+│   ├── site_locations.csv            # GPS coordinates
+│   └── personnel.csv                 # Research team details
+└── images/                            # Species photos and figures
 ```
 
 ---
@@ -120,7 +121,7 @@ cafi_data['cafi_size_mm_numeric'].mean()  # Calculates mean
 
 ## 📊 Two Experiments + One Survey
 
-### 1. **Maatea Size Experiment** (9 files)
+### 1. **Maatea Size Experiment** (8 files)
 **Question:** Does coral colony size affect CAFI communities?
 
 **Location:** Maatea backreef, Mo'orea (17.6°S, 149.8°W)
@@ -382,8 +383,9 @@ cor.test(merged$cafi_count, merged$protein_mg_cm2)
 - **[README_photogrammetry_metadata_v2.txt](metadata/README_photogrammetry_metadata_v2.txt)** - 3D photogrammetry methods and model types
 - **[README_tip_stump_comparison_dec_2019.txt](metadata/README_tip_stump_comparison_dec_2019.txt)** - Tip vs. stump comparison study
 
-**Data dictionaries (.xlsx files):**
-- 9 Excel files with detailed column descriptions for each dataset
+**Data dictionaries (.xlsx and .csv files):**
+- 8 Excel files with detailed column descriptions for each dataset
+- 8 CSV files with BCO-DMO compliant parameter definitions and units
 
 ---
 
@@ -441,37 +443,30 @@ Under these terms:
 
 ## 🔄 Version History
 
+- **v2.6** (2025-01-03) - Repository cleanup and BCO-DMO finalization
+  - Consolidated to 3 BCO-DMO datasets (Biological, Morphometry, Experimental Design)
+  - Added 8 BCO-DMO parameter metadata CSV files
+  - Consolidated Maatea photogrammetry files (24→23 files)
+  - Fixed grant numbers and removed outdated documentation
+  - Full BCO-DMO format compliance
+
 - **v2.3** (2025-01-02) - Full BCO-DMO compliance
   - Converted all dates to ISO 8601 format (YYYY-MM-DD)
   - Standardized column names (lowercase, underscores only)
   - Replaced NA values with blank cells per BCO-DMO standards
-  - Added image inventory CSV (images/image_inventory.csv)
-  - Added CLAUDE.md with compliance documentation
-  - Updated DATA_DICTIONARY.md and README.md for compliance
-
-- **v2.6** (2025-01-03) - Repository cleanup and BCO-DMO finalization
-  - Consolidated to 3 BCO-DMO datasets (Biological, Morphometry, Experimental Design)
-  - Added parameter metadata for all 23 files
-  - Consolidated Maatea photogrammetry files (24→23 files)
-  - Full BCO-DMO format compliance (ISO 8601 dates, blank missing values)
+  - Added image inventory CSV and CLAUDE.md
 
 - **v2.2** (2024-11-11) - BCO-DMO submission preparation
   - Fixed funding information (NSF OCE-1851510 and OCE-1851032)
   - Added complete research team to personnel
-  - Clarified organism-specific measurement methods
   - Added DOI and versioning documentation
 
 - **v2.1** (2024-10-27) - Enhanced metadata release
-  - Added 5 plain text (.txt) method overview files for improved accessibility
-  - Reformatted metadata files with clear structure and headers
-  - Updated README to accurately reflect repository structure
-  - All metadata now available in both human-readable (.txt) and original (.docx/.xlsx) formats
+  - Added 5 plain text (.txt) method overview files
+  - Reformatted metadata files with clear structure
 
 - **v2.0** (2024-10-24) - NSF OCE and LTER/EDI compliant release
-  - 25 data files from 2 experiments + 1 survey (added 2 tip/stump comparison files)
-  - Complete metadata and documentation
-  - All original data preserved with numeric columns added
-  - Comprehensive data verification and quality control completed
+  - Initial public release with complete metadata and documentation
 
 ---
 
@@ -496,10 +491,8 @@ See **[BCO_DMO_SUBMISSION_CHECKLIST.md](BCO_DMO_SUBMISSION_CHECKLIST.md)** for:
 - Required information and file list
 - Contact information and timeline
 
-**Deadline:** November 30, 2024 (before NSF final report)
-
 ---
 
-**Last Updated:** 2025-01-02
-**Current Version:** v2.3 (BCO-DMO Compliant)
+**Last Updated:** 2025-01-03
+**Current Version:** v2.6 (BCO-DMO Compliant)
 **Repository Maintained By:** Stier Lab, UC Santa Barbara
