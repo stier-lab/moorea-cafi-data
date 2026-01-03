@@ -299,27 +299,30 @@ Create `images/image_inventory.csv` with required BCO-DMO metadata fields.
 
 ---
 
-## BCO-DMO Dataset Organization (Per Shannon Rauch Feedback Nov 2025)
+## BCO-DMO Dataset Organization (Consolidated - 3 Datasets)
 
-**Key insight**: BCO-DMO organizes data by DATA TYPE, not by experiment. Each data type becomes a separate BCO-DMO dataset with its own landing page and DOI.
+Consolidated from 6 to 3 datasets while keeping studies identifiable via filename prefixes and coral_id.
 
-### Proposed BCO-DMO Datasets (6 datasets)
+### Proposed BCO-DMO Datasets
 
-| Dataset | Data Type | Primary Files | Supplemental Files |
-|---------|-----------|---------------|-------------------|
-| **Dataset 1** | CAFI Community Composition | 3 taxonomy CSVs | Treatment files |
-| **Dataset 2** | Coral Physiology | 3 physiology CSVs | Tip/stump comparison |
-| **Dataset 3** | Coral Photogrammetry | 4 photogrammetry CSVs | Raw mesh, manual measurements |
-| **Dataset 4** | Fish Community Surveys | 2 fish survey CSVs | - |
-| **Dataset 5** | Coral Characteristics & Experimental Design | 4 design/characteristics files | Position metadata |
-| **Dataset 6** | Genetic Sample Metadata | 1 genetic samples Excel | - |
+| Dataset | Contents | Primary | Supplemental | Total |
+|---------|----------|---------|--------------|-------|
+| **Dataset 1: Biological Data** | CAFI taxonomy, coral physiology, fish surveys | 8 | 2 | 10 |
+| **Dataset 2: Coral Morphometry** | Photogrammetry, growth, colony characteristics | 5 | 4 | 9 |
+| **Dataset 3: Experimental Design** | Treatment assignments, genetic samples | 3 | 1 | 4 |
+
+### Studies Remain Identifiable By:
+- **Filename prefix**: `maatea_size_`, `moorea_survey_`, `mrb_amount_`
+- **coral_id prefix**: MAT-POC (Maatea), FE-POC (MRB/Survey)
+- **study column** in BCO_DMO_FILE_DESCRIPTIONS.csv
 
 ### File Descriptions
 
 See **[BCO_DMO_FILE_DESCRIPTIONS.csv](BCO_DMO_FILE_DESCRIPTIONS.csv)** for complete file-by-file descriptions with:
 - Data type classification
+- Study identification
 - Primary vs. supplemental designation
-- Proposed BCO-DMO dataset grouping
+- BCO-DMO dataset assignment
 - Related files for linking
 
 ### Key Distinctions

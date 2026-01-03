@@ -14,7 +14,7 @@
 | Data Format Compliance | ✅ Complete | ISO 8601 dates, clean column names, blank missing values |
 | Parameter Metadata | ✅ Complete | All 23 files have definitions with units |
 | File Descriptions | ✅ Complete | BCO_DMO_FILE_DESCRIPTIONS.csv |
-| Dataset Organization | ✅ Complete | 6 proposed datasets by data type |
+| Dataset Organization | ✅ Complete | 3 datasets (Biological, Morphometry, Experimental Design) |
 | Species Validation | ✅ Complete | WoRMS AphiaIDs validated |
 | Submission Materials | 🟡 Ready | Pending final review |
 
@@ -83,16 +83,18 @@
 
 ## ✅ Dataset Organization (COMPLETED)
 
-BCO-DMO organizes by DATA TYPE, not experiment. Proposed structure:
+Consolidated into 3 datasets while keeping studies identifiable via filename prefixes and coral_id:
 
-| BCO-DMO Dataset | Data Type | Files | Primary/Supplemental |
-|-----------------|-----------|-------|---------------------|
-| Dataset 1 | CAFI Community Composition | 3 | All Primary |
-| Dataset 2 | Coral Physiology | 3 + 2 supplemental | 3 Primary, 2 Supplemental |
-| Dataset 3 | Coral Photogrammetry | 2 + 4 supplemental | 2 Primary, 4 Supplemental |
-| Dataset 4 | Fish Community Surveys | 2 | All Primary |
-| Dataset 5 | Coral Characteristics & Design | 4 + 2 supplemental | 4 Primary, 2 Supplemental |
-| Dataset 6 | Genetic Sample Metadata | 1 | Primary |
+| BCO-DMO Dataset | Contents | Primary Files | Supplemental Files |
+|-----------------|----------|---------------|-------------------|
+| **Dataset 1: Biological Data** | CAFI taxonomy, coral physiology, fish surveys | 8 | 2 |
+| **Dataset 2: Coral Morphometry** | Photogrammetry, growth, colony characteristics | 5 | 4 |
+| **Dataset 3: Experimental Design** | Treatment assignments, genetic samples | 3 | 1 |
+
+**Studies remain identifiable by:**
+- Filename prefix: `maatea_size_`, `moorea_survey_`, `mrb_amount_`
+- coral_id prefix: MAT-POC, FE-POC, etc.
+- `study` column in BCO_DMO_FILE_DESCRIPTIONS.csv
 
 See **BCO_DMO_FILE_DESCRIPTIONS.csv** for complete file-by-file details.
 
@@ -133,7 +135,7 @@ See **BCO_DMO_FILE_DESCRIPTIONS.csv** for complete file-by-file details.
 ### Data Manager Communication
 - [x] Responded to Shannon Rauch (BCO-DMO) with file descriptions
 - [ ] Schedule Zoom call if needed for complex questions
-- [ ] Confirm 6-dataset organization is acceptable
+- [ ] Confirm 3-dataset organization is acceptable
 
 ### Quality Assurance
 - [ ] Spot-check 2-3 CSV files for format compliance
@@ -159,39 +161,49 @@ See **BCO_DMO_FILE_DESCRIPTIONS.csv** for complete file-by-file details.
 
 ## 📋 Files to Submit (23 Data Files)
 
-### Dataset 1: CAFI Community Composition (3 files)
+### Dataset 1: Biological Data (10 files)
+
+**CAFI Taxonomy (3 primary):**
 - [x] `maatea_size_cafi_taxonomy_merged_2019_2021_v2.csv`
 - [x] `moorea_survey_cafi_taxonomy_summer_2019_v5.csv`
 - [x] `mrb_amount_cafi_field_experiment_summer_2021_v4.csv`
 
-### Dataset 2: Coral Physiology (5 files)
+**Coral Physiology (3 primary + 2 supplemental):**
 - [x] `maatea_size_physiology_master_long_2019_2021_v3.csv`
 - [x] `moorea_survey_physiology_master_2019_v3.csv`
 - [x] `mrb_amount_physiology_master_2019_2021_v5.csv`
 - [x] `moorea_survey_tip_stump_comparison_dec_2019_v1.xlsx` (Supplemental)
 - [x] `moorea_survey_tip_stump_zoox_counts_dec_2019_v1.xlsx` (Supplemental)
 
-### Dataset 3: Coral Photogrammetry (6 files)
-- [x] `maatea_size_photogrammetry_2019_2021_v1.csv`
-- [x] `mrb_amount_photogrammetry_measures_2019_2021_v1.csv`
-- [x] `mrb_amount_photogrammetry_200k_mesh_2019_2021_v1.csv` (Supplemental)
-- [x] `mrb_amount_coral_growth_surface_area_change_v1.csv`
-- [x] `mrb_amount_coral_growth_surface_area_change_filtered_v1.csv` (Supplemental)
-- [x] `maatea_size_photogrammetry_summer_2019_v1.xlsx` (Supplemental)
-
-### Dataset 4: Fish Community Surveys (2 files)
+**Fish Surveys (2 primary):**
 - [x] `maatea_size_fish_surveys_2019_2021_v1.csv`
 - [x] `mrb_amount_fish_surveys_may_2021_v1.csv`
 
-### Dataset 5: Coral Characteristics & Experimental Design (6 files)
+### Dataset 2: Coral Morphometry (9 files)
+
+**Photogrammetry (2 primary + 2 supplemental):**
+- [x] `maatea_size_photogrammetry_2019_2021_v1.csv`
+- [x] `mrb_amount_photogrammetry_measures_2019_2021_v1.csv`
+- [x] `mrb_amount_photogrammetry_200k_mesh_2019_2021_v1.csv` (Supplemental - Raw)
+- [x] `maatea_size_photogrammetry_summer_2019_v1.xlsx` (Supplemental)
+
+**Coral Growth (1 primary + 1 supplemental):**
+- [x] `mrb_amount_coral_growth_surface_area_change_v1.csv`
+- [x] `mrb_amount_coral_growth_surface_area_change_filtered_v1.csv` (Supplemental - QC)
+
+**Colony Characteristics (2 primary + 1 supplemental):**
 - [x] `moorea_survey_coral_characteristics_merged_2019_v2.csv`
 - [x] `maatea_size_colony_measurements_wide_2019_2021_v1.csv`
+- [x] `mrb_amount_manual_colony_measurements_2019_2021_v1.xlsx` (Supplemental)
+
+### Dataset 3: Experimental Design (4 files)
+
+**Treatment Assignments (2 primary + 1 supplemental):**
 - [x] `maatea_size_experimental_treatments_v1.csv`
 - [x] `mrb_amount_experimental_treatments_v1.csv`
 - [x] `mrb_amount_coral_id_position_treatment_v1.csv` (Supplemental)
-- [x] `mrb_amount_manual_colony_measurements_2019_2021_v1.xlsx` (Supplemental)
 
-### Dataset 6: Genetic Sample Metadata (1 file)
+**Genetic Samples (1 primary):**
 - [x] `maatea_size_genetic_samples_metadata_v3.xlsx`
 
 ---
@@ -225,6 +237,7 @@ See **BCO_DMO_FILE_DESCRIPTIONS.csv** for complete file-by-file details.
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v2.6 | 2025-01-03 | Consolidated to 3 datasets (from 6) |
 | v2.5 | 2025-01-03 | Added parameter metadata for all files |
 | v2.4 | 2025-01-03 | File consolidation (24→23 files) |
 | v2.3 | 2025-01-02 | BCO-DMO format compliance complete |

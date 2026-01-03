@@ -1,6 +1,6 @@
 # Data Dictionary
 
-Complete descriptions of all columns across all 24 data files.
+Complete descriptions of all columns across all 23 data files.
 
 ---
 
@@ -301,6 +301,6 @@ See the `metadata/` folder for:
 
 ---
 
-**Last Updated:** 2025-01-02
+**Last Updated:** 2025-01-03
 
-**BCO-DMO Compliance Update:** All date columns converted to ISO 8601 format (YYYY-MM-DD), column names standardized, missing values represented as blank cells.
+**BCO-DMO Compliance Update:** All date columns converted to ISO 8601 format (YYYY-MM-DD), column names standardized, missing values represented as blank cells. Dataset organization consolidated to 3 datasets (Biological Data, Coral Morphometry, Experimental Design).
