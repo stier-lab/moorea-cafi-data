@@ -5,7 +5,7 @@
 This repository contains the **Mo'orea Coral Reef CAFI (Cryptic Associated Fauna and Invertebrates) Data Package** from field experiments and surveys conducted in French Polynesia (2019-2021).
 
 ### Quick Stats
-- **24 data files** (CSV + Excel)
+- **23 data files** (CSV + Excel) - consolidated from 24 files
 - **25,054 total rows** of ecological data
 - **17,073 individual invertebrates** identified to species level
 - **228 coral colonies** studied across 3 studies
@@ -22,8 +22,8 @@ This repository contains the **Mo'orea Coral Reef CAFI (Cryptic Associated Fauna
 
 ```
 moorea-cafi-data/
-├── data/                    # 24 data files
-│   ├── maatea_size_*       # Size experiment (9 files)
+├── data/                    # 23 data files (consolidated)
+│   ├── maatea_size_*       # Size experiment (8 files)
 │   ├── moorea_survey_*     # Survey (5 files)
 │   └── mrb_amount_*        # Amount experiment (10 files)
 ├── metadata/               # Method descriptions + data dictionaries
@@ -46,7 +46,7 @@ moorea-cafi-data/
 
 | Study | Question | Colonies | Years | Files |
 |-------|----------|----------|-------|-------|
-| **Maatea Size** | How does coral size affect CAFI? | 60 | 2019-2021 | 9 |
+| **Maatea Size** | How does coral size affect CAFI? | 60 | 2019-2021 | 8 |
 | **MRB Amount** | How does coral density affect CAFI? | 54 | 2019-2021 | 10 |
 | **Mo'orea Survey** | What is natural CAFI variation? | 114 | 2019 | 5 |
 
@@ -402,10 +402,24 @@ These are valid data flags, not missing values. Document in parameter metadata.
 
 ---
 
+## File Consolidation (v2.4)
+
+To reduce file count while keeping studies separate, the following files were consolidated:
+
+### Maatea Size Experiment
+- **MERGED**: `maatea_size_photogrammetry_summary_dec_2019_v1.csv` + `maatea_size_photogrammetry_summary_may_2021_v1.csv`
+- **INTO**: `maatea_size_photogrammetry_2019_2021_v1.csv` (117 records with `sampling_date` column)
+
+This consolidation follows the same pattern used for other multi-timepoint files in the repository (e.g., `mrb_amount_photogrammetry_measures_2019_2021_v1.csv`).
+
+---
+
 ## Version History
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v2.4 | 2025-01-03 | File consolidation (24→23 files) |
+| v2.3 | 2025-01-02 | BCO-DMO full compliance, NSF award fix |
 | v2.2 | 2024-11-11 | BCO-DMO preparation |
 | v2.1 | 2024-10-27 | Enhanced metadata |
 | v2.0 | 2024-10-24 | NSF/LTER compliant release |
@@ -428,5 +442,5 @@ These are valid data flags, not missing values. Document in parameter metadata.
 
 ---
 
-*Last updated: 2025-01-02*
+*Last updated: 2025-01-03*
 *This document was created to guide BCO-DMO compliance improvements*

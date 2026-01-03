@@ -125,10 +125,9 @@ Complete descriptions of all columns across all 24 data files.
 ### Photogrammetry Files
 
 **Files:**
-- `maatea_size_photogrammetry_summary_dec_2019_v1.csv`
-- `maatea_size_photogrammetry_summary_may_2021_v1.csv`
-- `mrb_amount_photogrammetry_200k_mesh_2019_2021_v1.csv` (combined raw data from both sampling periods)
+- `maatea_size_photogrammetry_2019_2021_v1.csv` (combined Dec 2019 + May 2021 with sampling_date column)
 - `mrb_amount_photogrammetry_measures_2019_2021_v1.csv` (cleaned for analysis)
+- `mrb_amount_photogrammetry_200k_mesh_2019_2021_v1.csv` (raw data - supplemental)
 
 **Column Descriptions:**
 
