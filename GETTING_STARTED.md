@@ -386,9 +386,9 @@ Team information is in **[metadata/personnel.csv](metadata/personnel.csv)**
 - Alex Primo (Graduate Student, UGA)
 
 ### Funding Information
-- **Grant**: NSF OCE-2224354
+- **Grants**: NSF OCE-1851510 and OCE-1851032
 - **Program**: Ocean Sciences
-- **Period**: 2021-2025
+- **Period**: 2019-2025
 
 ---
 

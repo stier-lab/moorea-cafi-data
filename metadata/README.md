@@ -82,15 +82,18 @@ This folder contains detailed metadata, methods documentation, and data dictiona
 - `README_survey_cafi_metadata_v1.xlsx` - Survey CAFI taxonomy
 - `README_survey_physio_metadata_v4.xlsx` - Survey physiology
 - `README_survey_coral_characteristics_metadata_v2.xlsx` - Survey coral traits
-- `README_photogrammetry_metadata_v2.docx` - Photogrammetry (Word format)
 
-### Original Documentation (.docx files)
+### Parameter Definitions (.csv files - Added 2025-01-03)
 
-**Complete project overviews (original formats):**
-- `README_survey_project_overview.docx`
-- `README_size_project_overview.docx`
-- `README_amount_project_overview.docx`
-- `README_tip_stump_comparison_dec_2019.docx`
+**BCO-DMO compliant column definitions with units:**
+- `README_amount_cafi_metadata_v1.csv` - MRB Amount CAFI taxonomy
+- `README_amount_growth_metadata_v1.csv` - Coral growth measurements
+- `README_amount_position_treatment_metadata_v1.csv` - Position/treatment assignments
+- `README_amount_treatments_metadata_v1.csv` - MRB treatment definitions
+- `README_size_cafi_units_supplement_v1.csv` - Maatea CAFI units supplement
+- `README_size_colony_measurements_metadata_v1.csv` - Colony measurements
+- `README_size_treatments_metadata_v1.csv` - Maatea treatment definitions
+- `README_survey_cafi_units_supplement_v1.csv` - Survey CAFI units supplement
 
 ---
 
@@ -132,9 +135,9 @@ This folder contains detailed metadata, methods documentation, and data dictiona
 - **Alex Primo** - Graduate Student Researcher, University of Georgia
 
 ### Funding
-- **Grant**: NSF OCE-2224354
+- **Grants**: NSF OCE-1851510 and OCE-1851032
 - **Program**: Ocean Sciences
-- **Period**: 2021-2025
+- **Period**: 2019-2025
 
 ---
 
@@ -175,9 +178,10 @@ Use **personnel.csv** to:
 
 ## 🔄 Version History
 
+- **2025-01-03** - Added 8 BCO-DMO parameter definition CSV files, fixed grant numbers
 - **2025-10-27** - Added site_locations.csv and personnel.csv
-- **2025-10-24** - Initial release with 5 .txt and 9 .xlsx files
 - **2025-10-26** - Improved formatting of .txt overview files
+- **2025-10-24** - Initial release with 5 .txt and 8 .xlsx files
 
 ---
 
@@ -185,12 +189,12 @@ Use **personnel.csv** to:
 
 For questions about:
 - **Experimental methods**: See project overview .txt files
-- **Column definitions**: See dataset-specific .xlsx files
+- **Column definitions**: See dataset-specific .xlsx or .csv files
 - **Study sites**: See site_locations.csv
 - **Team members**: See personnel.csv
 - **Anything else**: Contact PIs listed above
 
 ---
 
-**Last Updated**: 2025-10-27
-**Total Files**: 21 (5 .txt + 2 .csv + 9 .xlsx + 4 .docx + 1 README.md)
+**Last Updated**: 2025-01-03
+**Total Files**: 24 (5 .txt + 10 .csv + 8 .xlsx + 1 README.md)
