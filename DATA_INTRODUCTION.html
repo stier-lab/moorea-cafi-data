@@ -567,15 +567,9 @@
         /* Section Navigation Cards */
         .nav-cards {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 16px;
-            padding: 60px 0 120px;
-        }
-
-        @media (max-width: 1200px) {
-            .nav-cards {
-                grid-template-columns: repeat(3, 1fr);
-            }
+            padding: 60px 0 100px;
         }
 
         @media (max-width: 900px) {
@@ -1751,7 +1745,7 @@
         <h1 class="hero-title">Cryptic Life<br>Within the Reef</h1>
 
         <p class="hero-subtitle">
-            Documenting the hidden biodiversity of crabs, shrimp, and invertebrates living inside <em>Pocillopora</em> coral colonies on Mo'orea, French Polynesia
+            Documenting fishes and invertebrates (crabs, shrimp, worms) living inside <em>Pocillopora</em> coral colonies on Mo'orea, French Polynesia
         </p>
 
         <p class="hero-meta">
@@ -1800,84 +1794,42 @@
             <div class="nav-card" onclick="showSection('overview')">
                 <span class="nav-card-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-3 3"/></svg></span>
                 <h3>Dataset Overview</h3>
-                <p>What is CAFI? Learn about organisms living within coral branches</p>
-                <span class="nav-card-arrow">&rarr;</span>
-            </div>
-
-            <div class="nav-card" onclick="showSection('gallery')">
-                <span class="nav-card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></span>
-                <h3>Photo Gallery</h3>
-                <p>Visual documentation of species and research</p>
+                <p>What is CAFI? Statistics and sampling summary</p>
                 <span class="nav-card-arrow">&rarr;</span>
             </div>
 
             <div class="nav-card" onclick="showSection('experiments')">
                 <span class="nav-card-icon"><svg viewBox="0 0 24 24"><path d="M9 3h6v2H9z"/><path d="M8 5v3l-4 8c-.7 1.3.2 3 1.8 3h12.4c1.6 0 2.5-1.7 1.8-3l-4-8V5"/><path d="M7 14h10"/></svg></span>
                 <h3>Research Studies</h3>
-                <p>Two experiments and one survey spanning 45 months</p>
+                <p>Two experiments, one survey, and study site locations</p>
                 <span class="nav-card-arrow">&rarr;</span>
             </div>
 
             <div class="nav-card" onclick="showSection('organisms')">
                 <span class="nav-card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/><path d="M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg></span>
                 <h3>Species Catalog</h3>
-                <p>221 species identified from coral colonies</p>
+                <p>221 species of fishes and invertebrates identified</p>
+                <span class="nav-card-arrow">&rarr;</span>
+            </div>
+
+            <div class="nav-card" onclick="showSection('gallery')">
+                <span class="nav-card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></span>
+                <h3>Photo Gallery</h3>
+                <p>Images of Mo'orea, corals, and CAFI species</p>
                 <span class="nav-card-arrow">&rarr;</span>
             </div>
 
             <div class="nav-card" onclick="showSection('files')">
                 <span class="nav-card-icon"><svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg></span>
-                <h3>Data Files</h3>
-                <p>Navigate the 23 data files organized by type</p>
-                <span class="nav-card-arrow">&rarr;</span>
-            </div>
-
-            <div class="nav-card" onclick="showSection('methods')">
-                <span class="nav-card-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></span>
-                <h3>Methods</h3>
-                <p>Field protocols and data collection procedures</p>
+                <h3>Data & Methods</h3>
+                <p>23 data files, field protocols, and downloads</p>
                 <span class="nav-card-arrow">&rarr;</span>
             </div>
 
             <div class="nav-card" onclick="showSection('getstarted')">
                 <span class="nav-card-icon"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
                 <h3>Get Started</h3>
-                <p>Download, load, and analyze the dataset</p>
-                <span class="nav-card-arrow">&rarr;</span>
-            </div>
-
-            <div class="nav-card" onclick="showSection('map')">
-                <span class="nav-card-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-                <h3>Study Sites</h3>
-                <p>Interactive map of research locations around Mo'orea</p>
-                <span class="nav-card-arrow">&rarr;</span>
-            </div>
-
-            <div class="nav-card" onclick="showSection('stats')">
-                <span class="nav-card-icon"><svg viewBox="0 0 24 24"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg></span>
-                <h3>Statistics</h3>
-                <p>Visualize dataset composition and sampling effort</p>
-                <span class="nav-card-arrow">&rarr;</span>
-            </div>
-
-            <div class="nav-card" onclick="showSection('citation')">
-                <span class="nav-card-icon"><svg viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 010-5H6"/><path d="M18 9h1.5a2.5 2.5 0 000-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0012 0V2Z"/></svg></span>
-                <h3>Cite This Dataset</h3>
-                <p>Copy-ready citations in APA, BibTeX, and Chicago formats</p>
-                <span class="nav-card-arrow">&rarr;</span>
-            </div>
-
-            <div class="nav-card" onclick="showSection('downloads')">
-                <span class="nav-card-icon"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span>
-                <h3>Download Center</h3>
-                <p>Get the data via GitHub, ZIP, or BCO-DMO</p>
-                <span class="nav-card-arrow">&rarr;</span>
-            </div>
-
-            <div class="nav-card" onclick="showSection('funding')">
-                <span class="nav-card-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></span>
-                <h3>Team & Funding</h3>
-                <p>Research team and funding information</p>
+                <p>Download data, cite dataset, and team info</p>
                 <span class="nav-card-arrow">&rarr;</span>
             </div>
         </div>
@@ -1893,7 +1845,7 @@
             <div class="info-box">
                 <div class="info-box-title">What are CAFI?</div>
                 <p>
-                    <strong>CAFI</strong> stands for <strong>Cryptic Associated Fauna and Invertebrates</strong> &mdash; the organisms (crabs, shrimp, worms, snails, fish) that live within coral branches. While corals appear solid from outside, they house entire communities of organisms in the spaces between branches. These organisms can influence coral health and growth.
+                    <strong>CAFI</strong> stands for <strong>Coral Associated Fishes and Invertebrates</strong> &mdash; the organisms (crabs, shrimp, worms, snails, fish) that live within coral branches. While corals appear solid from outside, they house entire communities of organisms in the spaces between branches. These organisms can influence coral health and growth.
                 </p>
             </div>
 
