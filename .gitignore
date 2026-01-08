@@ -76,6 +76,9 @@ dmypy.json
 *.bak
 *.tmp
 
+# AI Assistant local config
+.claude/
+
 # Data backups (keep only cleaned versions)
 *_backup.*
 *_old.*

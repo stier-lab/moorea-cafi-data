@@ -238,12 +238,12 @@ trapezia_serenei.jpg,2019-06-25,-17.47428,-149.81492,J. Curtis,Coral guard crab 
 
 ## MINOR ISSUES (Nice to Fix)
 
-### 11. CITATION.cff VERSION MISMATCH
+### 11. CITATION.cff VERSION - RESOLVED ✅
 
-**Current**: `version: 2.0.0` with `date-released: 2025-10-24`
-**README States**: `v2.2` with `2024-11-11`
-
-**Fix**: Synchronize version information across all files.
+Version information is now synchronized across all files:
+- CITATION.cff: `version: 2.4.0` with `date-released: 2025-01-03`
+- README.md: v2.6 (2025-01-03)
+- All documentation updated to reflect current state
 
 ---
 
@@ -338,7 +338,7 @@ See **[BCO_DMO_FILE_DESCRIPTIONS.csv](BCO_DMO_FILE_DESCRIPTIONS.csv)** for compl
 
 ## BCO-DMO Submission Checklist
 
-### Completed (v2.3)
+### Completed (v2.4)
 
 - [x] Convert all dates to ISO 8601 (YYYY-MM-DD)
 - [x] Replace NA values with blank cells
@@ -347,6 +347,8 @@ See **[BCO_DMO_FILE_DESCRIPTIONS.csv](BCO_DMO_FILE_DESCRIPTIONS.csv)** for compl
 - [x] Verify all coordinates are decimal degrees
 - [x] Create image inventory CSV
 - [x] Fix NSF award numbers (OCE-1851510, OCE-1851032)
+- [x] Synchronize version info across all files
+- [x] Fix CAFI acronym (Coral Associated Fishes and Invertebrates)
 
 ### Still Needed
 
