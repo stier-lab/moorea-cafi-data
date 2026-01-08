@@ -2,7 +2,7 @@
 
 ## Repository Overview
 
-This repository contains the **Mo'orea Coral Reef CAFI (Cryptic Associated Fauna and Invertebrates) Data Package** from field experiments and surveys conducted in French Polynesia (2019-2021).
+This repository contains the **Mo'orea Coral Reef CAFI (Coral Associated Fishes and Invertebrates) Data Package** from field experiments and surveys conducted in French Polynesia (2019-2021).
 
 ### Quick Stats
 - **23 data files** (CSV + Excel) - consolidated from 24 files

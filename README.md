@@ -1,6 +1,6 @@
 # Mo'orea Coral Reef CAFI Field Experiments (2019-2021)
 
-**Cryptic Associated Fauna and Invertebrates (CAFI) Communities in Coral Reef Ecosystems**
+**Coral Associated Fishes and Invertebrates (CAFI) Communities in Coral Reef Ecosystems**
 
 ![Trapezia guard crab on coral](images/trapezia_serenei.jpg)
 
@@ -14,7 +14,7 @@
 
 This repository contains **complete, publication-ready data** from two field experiments and one observational survey investigating how cryptic invertebrate communities affect coral reef ecosystems in Mo'orea, French Polynesia (2019-2021).
 
-**What are CAFI?** Cryptic Associated Fauna and Invertebrates are small organisms (crabs, shrimp, worms, snails) that live hidden within coral branches. These cryptic communities can significantly influence coral health and growth.
+**What are CAFI?** Coral Associated Fishes and Invertebrates are organisms (crabs, shrimp, worms, snails, fish) that live hidden within coral branches. These cryptic communities can significantly influence coral health and growth.
 
 ### Key Features:
 - ✅ **Original data 100% preserved** - All data as collected in the field
@@ -244,7 +244,7 @@ All dates are in **ISO 8601 format (YYYY-MM-DD)**.
 
 ## 📐 Measurement Methods
 
-### CAFI (Cryptic Associated Fauna and Invertebrates):
+### CAFI (Coral Associated Fishes and Invertebrates):
 - **Collection:** Coral colonies wrapped in mesh bags, transported to lab
 - **Extraction:** Clove oil anesthetization to expel invertebrates
 - **Identification:** Sorted, measured, identified to lowest taxonomic level
