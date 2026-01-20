@@ -1,0 +1,68 @@
+Subject: Re: BCO-DMO Dataset Submission (Adrian Stier - y8Vz5On33MEt0ZjJ)
+
+Hi Shannon,
+
+Thank you for the detailed guidance. I've prepared the materials you requested and would love to schedule a Zoom call to confirm the organization approach.
+
+FILE DESCRIPTIONS:
+I've created a file descriptions spreadsheet (BCO_DMO_FILE_DESCRIPTIONS_SIMPLE.csv) with unique descriptions for all 23 data files, including:
+- Data type classification
+- Brief description
+- Primary vs supplemental designation
+- Proposed BCO-DMO dataset assignment
+- Row/column counts
+- Related files
+
+I can upload this to the submission portal or send it directly - whichever is easier.
+
+PARAMETERS FILE:
+I apologize for the confusion - I don't think the parameters file was successfully uploaded to the portal. I've now created BCO_DMO_MASTER_PARAMETERS.csv with definitions for all 203 unique parameters including units and which data files use each parameter. Would you prefer:
+1. This master file covering all parameters, OR
+2. Individual parameter files for each data file?
+
+PROPOSED DATASET ORGANIZATION (3 Datasets):
+
+Dataset 1: Biological Data
+- Contents: CAFI taxonomy, coral physiology, fish surveys
+- Primary files: 8
+- Supplemental files: 2
+
+Dataset 2: Coral Morphometry
+- Contents: Photogrammetry, growth, colony measurements
+- Primary files: 5
+- Supplemental files: 4
+
+Dataset 3: Experimental Design
+- Contents: Treatment assignments, genetic samples
+- Primary files: 3
+- Supplemental files: 1
+
+The three studies (Maatea Size, MRB Amount, Mo'orea Survey) remain identifiable within each dataset through filename prefixes and coral_id codes.
+
+QUESTIONS FOR YOU:
+1. Is this 3-dataset organization acceptable, or would you prefer a different structure?
+2. Should I include the 12 species/field photos as a separate submission or as supplemental files?
+3. I have 5 files in Excel format (all supplemental data) - should I convert these to CSV?
+
+PHOTOS:
+Yes, I do plan to submit the photos. I have 12 images (9 species specimens + 3 field/site documentation) with a complete image inventory including dates, coordinates, photographer, and WoRMS AphiaIDs for species photos.
+
+ZOOM CALL:
+A call would be very helpful to discuss the organization. I'm flexible on timing - please let me know what works for you.
+
+Best regards,
+Adrian
+
+______________________________
+
+Adrian Stier (he/him/his)
+
+Associate Professor
+Department of Ecology Evolution & Marine Biology
+University of California Santa Barbara | Chumash Nation Territory
+
+astier@ucsb.edu
+Office: Noble Hall 2108
+W: (805) 893 5467
+M: (203) 241 8978
+web: https://www.oceanrecoveries.com/
